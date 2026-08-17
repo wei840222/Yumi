@@ -112,11 +112,12 @@ flowchart TD
 
 ### 1. 放置或連結配置
 
-將本倉庫配置複製或軟連結至你的 OpenCode 設定目錄（例如 `~/.config/opencode`）：
+將本倉庫配置複製或軟連結至你的 OpenCode 設定目錄（例如 `~/.agents`）：
 
 ```bash
-git clone <repository_url> ~/.config/opencode
-cd ~/.config/opencode
+git clone <repository_url> ~/.agents
+cd ~/.agents
+clawhub --workdir=$(pwd) update --all
 ```
 
 ### 2. 開始對話
