@@ -1,0 +1,5 @@
+*
+!.gitignore
+!AGENTS.md
+!agents/
+!agents/*.md
