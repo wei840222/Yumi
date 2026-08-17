@@ -1,5 +1,9 @@
 *
 !.gitignore
+!README.md
 !AGENTS.md
 !agents/
 !agents/*.md
+!.clawhub/
+!.clawhub/lock.json
+!skills/
