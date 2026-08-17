@@ -59,25 +59,26 @@ Do not manufacture a fixed tool-call count. Parallelize independent searches; se
 
 All tools below run via `bash`. For tools with a corresponding skill, read the skill first for full usage and constraints.
 
-| Need | Primary | Skill | Fallback |
-| --- | --- | --- | --- |
-| Natural language / semantic search | `cx search` | cx skill | `grep` |
-| Repository/directory structure | `treemd` | treemd skill | `glob` or `ls` |
-| Locate symbol by exact name | `cx find` | cx skill | `grep` |
-| Locate symbol by AST pattern | `ast-grep` | — | `grep` |
-| Call flow / caller graph | `cx find --callers` | cx skill | `grep` + manual trace |
-| Change impact / affected files | `codegraph impact` | codegraph skill | `grep` across callers |
-| Code relationship / structure | `codegraph explore` | codegraph skill | `grep` + `read` |
-| Exact string/config/filename search | `grep` or `glob` | — | `git grep` |
-| Read file content | `read` with offset/limit | — | — |
-| When code changed | `git log -S`/`-G` | — | File-scoped `git log -p` |
-| Line origin/file history | `git blame -C` | — | `git log --follow` |
-| Large file structure | `read` + `grep` for headings | — | — |
-| Public docs/external reference | `webfetch` | — | — |
+| Need                                | Primary                      | Skill           | Fallback                 |
+| ----------------------------------- | ---------------------------- | --------------- | ------------------------ |
+| Natural language / semantic search  | `cx search`                  | cx skill        | `grep`                   |
+| Repository/directory structure      | `treemd`                     | treemd skill    | `glob` or `ls`           |
+| Locate symbol by exact name         | `cx find`                    | cx skill        | `grep`                   |
+| Locate symbol by AST pattern        | `ast-grep`                   | —               | `grep`                   |
+| Call flow / caller graph            | `cx find --callers`          | cx skill        | `grep` + manual trace    |
+| Change impact / affected files      | `codegraph impact`           | codegraph skill | `grep` across callers    |
+| Code relationship / structure       | `codegraph explore`          | codegraph skill | `grep` + `read`          |
+| Exact string/config/filename search | `grep` or `glob`             | —               | `git grep`               |
+| Read file content                   | `read` with offset/limit     | —               | —                        |
+| When code changed                   | `git log -S`/`-G`            | —               | File-scoped `git log -p` |
+| Line origin/file history            | `git blame -C`               | —               | `git log --follow`       |
+| Large file structure                | `read` + `grep` for headings | —               | —                        |
+| Public docs/external reference      | `webfetch`                   | —               | —                        |
 
 ### CLI Quick Reference
 
 **cx** — semantic + symbol search
+
 ```bash
 cx find --type function,struct "my_func" --callers       # symbol + callers
 cx search --limit 20 "auth token validation"             # natural language
@@ -86,6 +87,7 @@ cx index                                                 # refresh index
 ```
 
 **codegraph** — index-based exploration
+
 ```bash
 codegraph explore --depth 3 "src/auth/token.rs"          # relationship map
 codegraph impact --file "src/auth/token.rs"              # files affected by change
@@ -93,12 +95,14 @@ codegraph query "callers_of:validate_token AND is_test"  # complex queries
 ```
 
 **treemd** — file structure
+
 ```bash
 treemd -t 3 -d 2 -i "src,node_modules,tests,docs" src/   # directory overview
 treemd -t 1 -d 3 src/auth/                               # deep structure view
 ```
 
 **ast-grep** — AST pattern matching
+
 ```bash
 ast-grep --pattern 'fn $NAME($$$ARGS) { $$$BODY }' --lang rust
 ast-grep --pattern 'import {$$$} from "react"' --lang tsx
@@ -168,13 +172,13 @@ Report failures under **Unresolved**: what was attempted, what went wrong, what 
 
 ## Failure Routing
 
-| Failure | Fallback | Report |
-| --- | --- | --- |
-| Multiple symbol candidates | `grep` + read each candidate | Don't arbitrarily select |
-| Dynamic dispatch/generated wiring | Search config, registration, factory, tests | Potential caller graph gaps |
-| Too many grep results | Narrow by dir/extension/filename/pattern | Explain actual scope |
-| Git history too large | Add path/date/branch/term | Don't treat first commit as answer |
-| Shallow clone missing history | `git fetch --unshallow` then re-run | Don't deepen other branches without authorization |
+| Failure                           | Fallback                                    | Report                                            |
+| --------------------------------- | ------------------------------------------- | ------------------------------------------------- |
+| Multiple symbol candidates        | `grep` + read each candidate                | Don't arbitrarily select                          |
+| Dynamic dispatch/generated wiring | Search config, registration, factory, tests | Potential caller graph gaps                       |
+| Too many grep results             | Narrow by dir/extension/filename/pattern    | Explain actual scope                              |
+| Git history too large             | Add path/date/branch/term                   | Don't treat first commit as answer                |
+| Shallow clone missing history     | `git fetch --unshallow` then re-run         | Don't deepen other branches without authorization |
 
 ## Restricted Operations
 

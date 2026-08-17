@@ -138,32 +138,32 @@ Use the narrowest available capability that can answer the question.
 
 Tools below with a corresponding skill — read the skill first for full usage, parameters, and constraints.
 
-| Need | Primary | Skill | Fallback |
-| --- | --- | --- | --- |
-| Directory/file structure | `treemd` | treemd skill | `glob` or `ls` |
-| Locate symbol or string | `grep` (regex) | — | `rg` via bash |
-| Read file content | `read` with offset/limit | — | — |
-| When code changed | `git log -S`/`-G` | — | File-scoped `git log -p` |
-| Line origin/file history | `git blame -C` | — | `git log --follow` |
-| Web search (general or vertical domains) | `anysearch` skill: `search`, `batch_search`, `get_sub_domains` | anysearch skill | `webfetch` |
-| Extract clean content from web pages | `anysearch` skill: `extract` | anysearch skill | `defuddle parse <url> --md` |
-| Version-specific library/framework docs | `context7` | context7 skill | `webfetch` official docs |
-| Google Cloud/Firebase/Android/Gemini | `google-developer-knowledge` | — | — |
-| GitHub project docs and architecture | `deepwiki` | deepwiki skill | `webfetch` README |
-| GitHub issues, PRs, CI, releases | `gh` (read-only: `list`, `view`, `checks`, `diff`) | — | `webfetch` |
-| Skill discovery (local QMD) | `qmd search`/`qmd query` against `omni-skills` collection | — | — |
-| Skill discovery (marketplace) | `clawhub search`/`clawhub inspect` | — | — |
+| Need                                     | Primary                                                        | Skill           | Fallback                    |
+| ---------------------------------------- | -------------------------------------------------------------- | --------------- | --------------------------- |
+| Directory/file structure                 | `treemd`                                                       | treemd skill    | `glob` or `ls`              |
+| Locate symbol or string                  | `grep` (regex)                                                 | —               | `rg` via bash               |
+| Read file content                        | `read` with offset/limit                                       | —               | —                           |
+| When code changed                        | `git log -S`/`-G`                                              | —               | File-scoped `git log -p`    |
+| Line origin/file history                 | `git blame -C`                                                 | —               | `git log --follow`          |
+| Web search (general or vertical domains) | `anysearch` skill: `search`, `batch_search`, `get_sub_domains` | anysearch skill | `webfetch`                  |
+| Extract clean content from web pages     | `anysearch` skill: `extract`                                   | anysearch skill | `defuddle parse <url> --md` |
+| Version-specific library/framework docs  | `context7`                                                     | context7 skill  | `webfetch` official docs    |
+| Google Cloud/Firebase/Android/Gemini     | `google-developer-knowledge`                                   | —               | —                           |
+| GitHub project docs and architecture     | `deepwiki`                                                     | deepwiki skill  | `webfetch` README           |
+| GitHub issues, PRs, CI, releases         | `gh` (read-only: `list`, `view`, `checks`, `diff`)             | —               | `webfetch`                  |
+| Skill discovery (local QMD)              | `qmd search`/`qmd query` against `omni-skills` collection      | —               | —                           |
+| Skill discovery (marketplace)            | `clawhub search`/`clawhub inspect`                             | —               | —                           |
 
 ### Skill Routing
 
-| Need | Route | Fallback |
-| --- | --- | --- |
-| Approved local extended-skill search | `qmd search` against `omni-skills` → `qmd get` complete SKILL.md | Stronger lexical `qmd search`; report unhealthy index |
-| Approved ClawHub marketplace search | `clawhub search` → `clawhub inspect` | Report unavailable registry path |
-| Decide, package, and verify a child task | Delegate workflow | Report unavailable specialist lane |
-| Fan out independent evidence lanes and converge | Diverge: 2-3 bounded lanes → conflict-aware synthesis | Single-lane or local research |
-| Large Markdown structure or single section | `treemd` (non-interactive) | `grep -n` then read in sections |
-| Synthesize multiple sources | Gather → Map → Extract → Reconcile → Verify | Manually list sources and conflicts |
+| Need                                            | Route                                                            | Fallback                                              |
+| ----------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------- |
+| Approved local extended-skill search            | `qmd search` against `omni-skills` → `qmd get` complete SKILL.md | Stronger lexical `qmd search`; report unhealthy index |
+| Approved ClawHub marketplace search             | `clawhub search` → `clawhub inspect`                             | Report unavailable registry path                      |
+| Decide, package, and verify a child task        | Delegate workflow                                                | Report unavailable specialist lane                    |
+| Fan out independent evidence lanes and converge | Diverge: 2-3 bounded lanes → conflict-aware synthesis            | Single-lane or local research                         |
+| Large Markdown structure or single section      | `treemd` (non-interactive)                                       | `grep -n` then read in sections                       |
+| Synthesize multiple sources                     | Gather → Map → Extract → Reconcile → Verify                      | Manually list sources and conflicts                   |
 
 ---
 
@@ -189,12 +189,12 @@ Run this workflow before Type A and Type D investigations involving an external 
 
 ## Execution Workflows (Type A–D)
 
-| Type                  | When                                                | Shape                                                                                          |
-| --------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| A — Conceptual        | API usage, "how to", recommended practice           | Documentation discovery → official pages → verify → answer                                     |
-| B — Implementation    | Source code, symbol, function location              | Prepare task-scoped clone → spawn explore → integrate verified file:line + commit              |
-| C — Context/History   | Commit, issue/PR, "why changed"                     | Prepare task-scoped clone → spawn explore (`git log -S/-G`, `blame -C`) → timeline + SHAs      |
-| D — Comprehensive     | Multiple sources, complex claims                    | Deep Research protocol, optional Diverge lanes → reconcile → synthesize                        |
+| Type                | When                                      | Shape                                                                                     |
+| ------------------- | ----------------------------------------- | ----------------------------------------------------------------------------------------- |
+| A — Conceptual      | API usage, "how to", recommended practice | Documentation discovery → official pages → verify → answer                                |
+| B — Implementation  | Source code, symbol, function location    | Prepare task-scoped clone → spawn explore → integrate verified file:line + commit         |
+| C — Context/History | Commit, issue/PR, "why changed"           | Prepare task-scoped clone → spawn explore (`git log -S/-G`, `blame -C`) → timeline + SHAs |
+| D — Comprehensive   | Multiple sources, complex claims          | Deep Research protocol, optional Diverge lanes → reconcile → synthesize                   |
 
 ### Type A — Conceptual
 
@@ -362,7 +362,7 @@ After generating a complex or consequential research plan, dispatch `gate` for a
 
 Use `sessions_spawn` with `agentId: gate`, `context: isolated`, `mode: run`; set `MODE` to `source-review`, `plan-review`, or `architect`.
 
-If an internal review returns `REJECT` or `CLARIFY`, resolve the issue within existing authority or preserve it under **Unresolved`. Gate remains a read-only acceptance check and grants no mutation authority.
+If an internal review returns `REJECT` or `CLARIFY`, resolve the issue within existing authority or preserve it under \*\*Unresolved`. Gate remains a read-only acceptance check and grants no mutation authority.
 
 ---
 
@@ -389,6 +389,7 @@ Use Diverge only when two or more independent evidence sets materially reduce bl
 ## Loop Termination
 
 Stop and return a partial result when:
+
 - The evidence goal is met
 - The authorized source/lane cap is exhausted
 - A required dependency remains unavailable
@@ -412,11 +413,11 @@ When a tool or subagent fails, place under **Unresolved**:
 
 ## Failure Routing
 
-| Failure | Safe fallback | Required report |
-| --- | --- | --- |
-| QMD index expired | Direct `grep` on current files | Note index freshness gap |
+| Failure                       | Safe fallback                            | Required report                       |
+| ----------------------------- | ---------------------------------------- | ------------------------------------- |
+| QMD index expired             | Direct `grep` on current files           | Note index freshness gap              |
 | QMD semantic/vector unhealthy | `qmd search` with expanded lexical terms | Do not claim complete semantic recall |
-| Skill or CLI unavailable | Use next verified read-only fallback | Report unexecuted checks and reasons |
+| Skill or CLI unavailable      | Use next verified read-only fallback     | Report unexecuted checks and reasons  |
 
 ## Failure Recovery
 
