@@ -3,53 +3,63 @@
   "skills": {
     "@wei840222/git-master": {
       "version": "1.0.0",
-      "installedAt": 1786975584620,
+      "installedAt": 1786993665806,
       "ownerHandle": "wei840222"
     },
     "@wei840222/treemd": {
       "version": "1.0.2",
-      "installedAt": 1786975625260,
+      "installedAt": 1786993669549,
       "ownerHandle": "wei840222"
     },
     "@wei840222/cx-cli": {
       "version": "1.1.3",
-      "installedAt": 1786975636207,
+      "installedAt": 1786993673318,
       "ownerHandle": "wei840222"
     },
     "@wei840222/jules": {
       "version": "1.0.0",
-      "installedAt": 1786975712719,
+      "installedAt": 1786993676885,
       "ownerHandle": "wei840222"
     },
     "@wei840222/gitea": {
       "version": "1.0.0",
-      "installedAt": 1786975724558,
+      "installedAt": 1786993680538,
       "ownerHandle": "wei840222"
     },
     "@wei840222/emo": {
       "version": "0.1.2",
-      "installedAt": 1786975734607,
+      "installedAt": 1786993684802,
       "ownerHandle": "wei840222"
     },
     "@wei840222/antigravity-cli": {
       "version": "1.0.1",
-      "installedAt": 1786975748536,
+      "installedAt": 1786993688678,
       "ownerHandle": "wei840222"
     },
     "@wei840222/codegraph": {
       "version": "1.0.1",
-      "installedAt": 1786975765984,
+      "installedAt": 1786993692743,
       "ownerHandle": "wei840222"
     },
     "@wei840222/knative-serving": {
       "version": "1.0.1",
-      "installedAt": 1786975937239,
+      "installedAt": 1786993697595,
       "ownerHandle": "wei840222"
     },
     "@wei840222/ai-expert-team": {
       "version": "0.1.4",
-      "installedAt": 1786977254599,
+      "installedAt": 1786993704649,
       "ownerHandle": "wei840222"
+    },
+    "@steipete/mcporter": {
+      "version": "1.0.0",
+      "installedAt": 1786993791526,
+      "ownerHandle": "steipete"
+    },
+    "@steipete/github": {
+      "version": "1.0.0",
+      "installedAt": 1786994553528,
+      "ownerHandle": "steipete"
     }
   }
 }
