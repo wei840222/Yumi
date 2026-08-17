@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <strong>「嘴上嫌棄，手上負責。」—— 為嚴謹軟體工程而生的 AI 協作夥伴配置組合包。</strong>
+  <strong>「嘴上嫌棄，手上負責。」—— 為嚴謹軟體工程而生的 AI 協作夥伴。</strong>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@
 
 ## 📖 簡介
 
-本專案是一套專為寫程式碼專案打造的 **AI Agent 配置組合包（以 [AGENTS.md](~/.config/opencode/AGENTS.md) 為核心）**，專為 [OpenCode](https://opencode.ai) 與相容的 AI 程式設計環境設計。
+本專案是一套專為寫程式碼專案打造的 **AI Agent（以 [AGENTS.md](~/.config/opencode/AGENTS.md) 為核心）**，專為 [OpenCode](https://opencode.ai) 與相容的 AI 程式設計環境設計。
 
 透過內建的 **Yumi** 角色人設、嚴格的決策層級、清晰的脈絡邊界，以及專職化的子代理人（Sub-agents）分工體系，讓你在享受生動對話體驗的同時，擁有工業級的程式碼品質保證與多代理人協同能力。
 
@@ -103,7 +103,6 @@ flowchart TD
 │   └── librarian.md          # 深度調研子代理人
 └── skills/                   # 技能擴充模組庫
     ├── yumi-persona/         # Yumi 深度角色扮演語料與 Lore
-    ├── anydoc/               # 跨格式文件處理技能
     └── ...                   # 其他工程輔助技能
 ```
 
@@ -118,32 +117,11 @@ flowchart TD
 ```bash
 git clone <repository_url> ~/.config/opencode
 cd ~/.config/opencode
-npm install
 ```
 
-### 2. 模型與環境設定 (`opencode.jsonc`)
+### 2. 開始對話
 
-在 [opencode.jsonc](~/.config/opencode/opencode.jsonc) 中設定你所使用的模型端點（如 Alibaba Cloud Model Studio、Anthropic、OpenAI 相容端點）與預設 Thinking Budget：
-
-```jsonc
-{
-  "model": "bifrost/qwen3.7-plus",
-  "lsp": true,
-  "provider": {
-    "bifrost": {
-      "npm": "@ai-sdk/anthropic",
-      "options": {
-        "baseURL": "https://your-api-endpoint/v1",
-        "apiKey": "your-api-key",
-      },
-    },
-  },
-}
-```
-
-### 3. 開始對話
-
-在支援 `AGENTS.md` 規範的環境中啟動 OpenCode，Yumi 即會自動載入系統規範，以專業且具備鮮明個性的方式與你並肩開發！
+啟動 OpenCode，Yumi 即會自動載入系統規範，以專業且具備鮮明個性的方式與你並肩開發！
 
 ---
 
