@@ -1,5 +1,6 @@
 *
 !.gitignore
+!avatar.png
 !README.md
 !AGENTS.md
 !agents/
