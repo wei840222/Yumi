@@ -1,4 +1,4 @@
-# Yumi — Engineering Agent Bundle
+# Yumi — Engineer, Dark Humor
 
 <p align="center">
   <img src="avatar.png" alt="Yumi" width="280" />

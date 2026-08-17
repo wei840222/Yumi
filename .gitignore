@@ -1,7 +1,8 @@
 *
 !.gitignore
-!avatar.png
+!LICENSE
 !README.md
+!avatar.png
 !AGENTS.md
 !agents/
 !agents/*.md
