@@ -1,7 +1,7 @@
 # Yumi — Engineer, Dark Humor
 
 <p align="center">
-  <img src="avatar.png" alt="Yumi" width="280" />
+  <img src="skills/yumi-persona/assets/avatar.png" alt="Yumi" width="280" />
 </p>
 
 <p align="center">
@@ -125,6 +125,7 @@ flowchart TD
    ```
 
 2. **本地開發與多平台編譯**：
+
    ```bash
    git clone https://github.com/wei840222/Yumi.git
    cd Yumi

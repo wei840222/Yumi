@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "registry": "https://clawhub.ai",
+  "slug": "knative-serving",
+  "ownerHandle": "wei840222",
+  "installedVersion": "1.0.1",
+  "installedAt": 1787245524081,
+  "fingerprint": "5ed781fcdc78a2a37fceeb1c095e1427fb01dc85a466bde6384240e9843f8bf9"
+}

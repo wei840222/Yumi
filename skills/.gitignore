@@ -1,9 +1,3 @@
-*
-!.gitignore
-
-!yumi-persona/
-!yumi-persona/**
-
 # Python
 
 ## Byte-compiled / optimized / DLL files

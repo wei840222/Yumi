@@ -1,5 +1,166 @@
-lockfile_version: "1"
-generated_at: "2026-08-20T16:47:44.388856+00:00"
+lockfile_version: '1'
+generated_at: '2026-08-20T16:47:44.388856+00:00'
 apm_version: 0.26.0
-dependencies: []
-deployments: []
+dependencies:
+- repo_url: wei840222/cx
+  name: cx
+  host: github.com
+  resolved_commit: 005bd36a806996eea5efa5e3bcf20e62e10637d0
+  version: unknown
+  package_type: skill_bundle
+  deployed_files:
+  - .agents/skills/cx
+  - .agents/skills/cx/SKILL.md
+  - .agents/skills/cx/references/command-reference.md
+  - .agents/skills/cx/references/decision-tree.md
+  - .agents/skills/cx/references/output-examples.md
+  - .agents/skills/cx/references/setup-and-recovery.md
+  - .agents/skills/cx/references/usage-inventory.md
+  - .claude/skills/cx
+  - .claude/skills/cx/SKILL.md
+  - .claude/skills/cx/references/command-reference.md
+  - .claude/skills/cx/references/decision-tree.md
+  - .claude/skills/cx/references/output-examples.md
+  - .claude/skills/cx/references/setup-and-recovery.md
+  - .claude/skills/cx/references/usage-inventory.md
+  deployed_file_hashes:
+    .agents/skills/cx/SKILL.md: sha256:460aaa8c5d62781e28c25927313b702a10e776261c7f3baeb7b4e5f58772f53d
+    .agents/skills/cx/references/command-reference.md: sha256:53520ac001c25142b868c371663f763e649090d847929e6509bdca95bdba32a2
+    .agents/skills/cx/references/decision-tree.md: sha256:db7c5fd7c065ee2718bb21c05c0aea06c027fb06f98209287a3416161cfc2fd2
+    .agents/skills/cx/references/output-examples.md: sha256:a7259291ed49caceb48a97218347ef2f7558e8d3dd6bf3f9d6f76dd50594f2ff
+    .agents/skills/cx/references/setup-and-recovery.md: sha256:8345aedbb677430eccbe5d61ce89e0b3b1ee4f368e1634ed2dc6024d11093788
+    .agents/skills/cx/references/usage-inventory.md: sha256:815ecf9d78af6bcaf6ade836368c934f55a2fba394fb7f359d880d04149da946
+    .claude/skills/cx/SKILL.md: sha256:460aaa8c5d62781e28c25927313b702a10e776261c7f3baeb7b4e5f58772f53d
+    .claude/skills/cx/references/command-reference.md: sha256:53520ac001c25142b868c371663f763e649090d847929e6509bdca95bdba32a2
+    .claude/skills/cx/references/decision-tree.md: sha256:db7c5fd7c065ee2718bb21c05c0aea06c027fb06f98209287a3416161cfc2fd2
+    .claude/skills/cx/references/output-examples.md: sha256:a7259291ed49caceb48a97218347ef2f7558e8d3dd6bf3f9d6f76dd50594f2ff
+    .claude/skills/cx/references/setup-and-recovery.md: sha256:8345aedbb677430eccbe5d61ce89e0b3b1ee4f368e1634ed2dc6024d11093788
+    .claude/skills/cx/references/usage-inventory.md: sha256:815ecf9d78af6bcaf6ade836368c934f55a2fba394fb7f359d880d04149da946
+  content_hash: sha256:a46025900ffc34156e516953a43a8acb1c25a9d2189b842401112ffd11ad3466
+deployments:
+- kind: project-relative
+  target: agents
+  value: .agents/skills/cx
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: null
+- kind: project-relative
+  target: agents
+  value: .agents/skills/cx/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: sha256:460aaa8c5d62781e28c25927313b702a10e776261c7f3baeb7b4e5f58772f53d
+- kind: project-relative
+  target: agents
+  value: .agents/skills/cx/references/command-reference.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: sha256:53520ac001c25142b868c371663f763e649090d847929e6509bdca95bdba32a2
+- kind: project-relative
+  target: agents
+  value: .agents/skills/cx/references/decision-tree.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: sha256:db7c5fd7c065ee2718bb21c05c0aea06c027fb06f98209287a3416161cfc2fd2
+- kind: project-relative
+  target: agents
+  value: .agents/skills/cx/references/output-examples.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: sha256:a7259291ed49caceb48a97218347ef2f7558e8d3dd6bf3f9d6f76dd50594f2ff
+- kind: project-relative
+  target: agents
+  value: .agents/skills/cx/references/setup-and-recovery.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: sha256:8345aedbb677430eccbe5d61ce89e0b3b1ee4f368e1634ed2dc6024d11093788
+- kind: project-relative
+  target: agents
+  value: .agents/skills/cx/references/usage-inventory.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: sha256:815ecf9d78af6bcaf6ade836368c934f55a2fba394fb7f359d880d04149da946
+- kind: project-relative
+  target: claude
+  value: .claude/skills/cx
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/cx/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: sha256:460aaa8c5d62781e28c25927313b702a10e776261c7f3baeb7b4e5f58772f53d
+- kind: project-relative
+  target: claude
+  value: .claude/skills/cx/references/command-reference.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: sha256:53520ac001c25142b868c371663f763e649090d847929e6509bdca95bdba32a2
+- kind: project-relative
+  target: claude
+  value: .claude/skills/cx/references/decision-tree.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: sha256:db7c5fd7c065ee2718bb21c05c0aea06c027fb06f98209287a3416161cfc2fd2
+- kind: project-relative
+  target: claude
+  value: .claude/skills/cx/references/output-examples.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: sha256:a7259291ed49caceb48a97218347ef2f7558e8d3dd6bf3f9d6f76dd50594f2ff
+- kind: project-relative
+  target: claude
+  value: .claude/skills/cx/references/setup-and-recovery.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: sha256:8345aedbb677430eccbe5d61ce89e0b3b1ee4f368e1634ed2dc6024d11093788
+- kind: project-relative
+  target: claude
+  value: .claude/skills/cx/references/usage-inventory.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: sha256:815ecf9d78af6bcaf6ade836368c934f55a2fba394fb7f359d880d04149da946
