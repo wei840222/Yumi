@@ -27,21 +27,21 @@ codegraph version                        # Print version (-v, --version)
 
 ## Flags per command (verified 1.4.1 `codegraph <cmd> --help`)
 
-| Command | Flags |
-|---|---|
-| `init` | `-f, --force`, `-v, --verbose` |
-| `uninit` | `-f, --force` |
-| `index` | `-f, --force`, `-q, --quiet`, `-v, --verbose` |
-| `sync` | `-q, --quiet` |
-| `status` | `-j, --json` |
-| `query` | `-p, --path <path>`, `-l, --limit <number>` (default 10), `-k, --kind <kind>`, `-j, --json` |
-| `explore` | `-p, --path <path>`, `--max-files <number>` |
-| `node` | `-p, --path <path>`, `-f, --file <file>`, `--offset <number>`, `--limit <number>`, `--symbols-only` |
-| `files` | `-p, --path <path>`, `--filter <dir>`, `--pattern <glob>`, `--format <tree\|flat\|grouped>` (default tree), `--max-depth <number>`, `--no-metadata`, `-j, --json` |
-| `callers` | `-p, --path <path>`, `-l, --limit <number>` (default 20), `-j, --json` |
-| `callees` | `-p, --path <path>`, `-l, --limit <number>` (default 20), `-j, --json` |
-| `impact` | `-p, --path <path>`, `-d, --depth <number>` (default 2), `-j, --json` |
-| `affected` | `-p, --path <path>`, `--stdin`, `-d, --depth <number>` (default 5), `-f, --filter <glob>`, `-j, --json`, `-q, --quiet` |
+| Command    | Flags                                                                                                                                                             |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `init`     | `-f, --force`, `-v, --verbose`                                                                                                                                    |
+| `uninit`   | `-f, --force`                                                                                                                                                     |
+| `index`    | `-f, --force`, `-q, --quiet`, `-v, --verbose`                                                                                                                     |
+| `sync`     | `-q, --quiet`                                                                                                                                                     |
+| `status`   | `-j, --json`                                                                                                                                                      |
+| `query`    | `-p, --path <path>`, `-l, --limit <number>` (default 10), `-k, --kind <kind>`, `-j, --json`                                                                       |
+| `explore`  | `-p, --path <path>`, `--max-files <number>`                                                                                                                       |
+| `node`     | `-p, --path <path>`, `-f, --file <file>`, `--offset <number>`, `--limit <number>`, `--symbols-only`                                                               |
+| `files`    | `-p, --path <path>`, `--filter <dir>`, `--pattern <glob>`, `--format <tree\|flat\|grouped>` (default tree), `--max-depth <number>`, `--no-metadata`, `-j, --json` |
+| `callers`  | `-p, --path <path>`, `-l, --limit <number>` (default 20), `-j, --json`                                                                                            |
+| `callees`  | `-p, --path <path>`, `-l, --limit <number>` (default 20), `-j, --json`                                                                                            |
+| `impact`   | `-p, --path <path>`, `-d, --depth <number>` (default 2), `-j, --json`                                                                                             |
+| `affected` | `-p, --path <path>`, `--stdin`, `-d, --depth <number>` (default 5), `-f, --filter <glob>`, `-j, --json`, `-q, --quiet`                                            |
 
 All `--json` outputs are scriptable. `explore` and `node` accept multiple `<query...>` tokens — name the symbols spanning a flow and codegraph surfaces the call path between them.
 
@@ -59,16 +59,16 @@ NodeKind values: `file, module, class, struct, interface, trait, protocol, funct
 
 ## Environment variables
 
-| Var | Effect |
-|---|---|
-| `CODEGRAPH_MCP_TOOLS` | Surface MCP tools (default is `explore` alone) |
-| `CODEGRAPH_WATCH_DEBOUNCE_MS` | Auto-sync debounce, clamped [100ms, 60s], default 2000ms |
-| `CODEGRAPH_NO_DAEMON` | Disable shared background server (WSL2 fix) |
-| `CODEGRAPH_DIR` | Index dir name override (e.g. `.codegraph-win`) |
-| `CODEGRAPH_ALLOW_UNSAFE_NODE` | Allow Node 25 (not recommended — crashes tree-sitter) |
-| `CODEGRAPH_EXPLORE_DEDUP` | Cross-call dedup off switch |
-| `CODEGRAPH_NO_REBIND` | Opt out of sync rebinding |
-| `CODEGRAPH_TELEMETRY=0` / `DO_NOT_TRACK=1` | Telemetry off |
+| Var                                        | Effect                                                   |
+| ------------------------------------------ | -------------------------------------------------------- |
+| `CODEGRAPH_MCP_TOOLS`                      | Surface MCP tools (default is `explore` alone)           |
+| `CODEGRAPH_WATCH_DEBOUNCE_MS`              | Auto-sync debounce, clamped [100ms, 60s], default 2000ms |
+| `CODEGRAPH_NO_DAEMON`                      | Disable shared background server (WSL2 fix)              |
+| `CODEGRAPH_DIR`                            | Index dir name override (e.g. `.codegraph-win`)          |
+| `CODEGRAPH_ALLOW_UNSAFE_NODE`              | Allow Node 25 (not recommended — crashes tree-sitter)    |
+| `CODEGRAPH_EXPLORE_DEDUP`                  | Cross-call dedup off switch                              |
+| `CODEGRAPH_NO_REBIND`                      | Opt out of sync rebinding                                |
+| `CODEGRAPH_TELEMETRY=0` / `DO_NOT_TRACK=1` | Telemetry off                                            |
 
 ## Ignore rules (expectation-setting)
 

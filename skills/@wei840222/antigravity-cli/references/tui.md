@@ -4,55 +4,55 @@ Launch with `agy` in a project directory. Type `/` in the prompt box to open typ
 
 ## Slash commands
 
-| Command | Alias | Purpose |
-| --- | --- | --- |
-| `/add-dir <path>` | | Add a directory path to the active workspace |
-| `/agents` | | Open Agent Manager Panel for background subagents |
-| `/btw <query>` | | Ask a background side question without interrupting the main conversation |
-| `/clear` | | Clear the terminal and reset active conversation contexts |
-| `/config` | `/settings` | Open the interactive Settings Editor Overlay |
-| `/diff` | | Show unified diff of modified workspace files |
-| `/exit` | | Close the TUI session and restore the host shell |
-| `/fast` | | Enable fast mode for quick actions |
-| `/fork` | `/branch` | Clone the current conversation into a parallel session |
-| `/hooks` | | Browse active pre-flight/post-format script hooks |
-| `/keybindings` | | Open the keyboard shortcut editor |
-| `/logout` | | Disconnect profile and purge auth tokens from secure keyring |
-| `/mcp` | | Open the MCP server manager |
-| `/model` | | Choose preferred reasoning model; persists across sessions |
-| `/open <path>` | | Force a path to open in the default system editor |
-| `/permissions` | | Switch global permission presets |
-| `/planning` | | Enable multi-turn plan generation mode |
-| `/rename <name>` | | Rename the current session thread |
-| `/resume` | `/switch`, `/conversation` | Open conversation picker |
-| `/rewind` | `/undo` | Roll back conversation history to a previous message |
-| `/skills` | | Browse loaded local and global Agent Skills |
-| `/statusline` | | Open status bar customization |
-| `/tasks` | | Open task manager for background shell execution logs |
-| `/title [on/off]` | | Toggle or set terminal window title updates |
-| `/usage` | | Open offline developer help in the terminal |
+| Command           | Alias                      | Purpose                                                                   |
+| ----------------- | -------------------------- | ------------------------------------------------------------------------- |
+| `/add-dir <path>` |                            | Add a directory path to the active workspace                              |
+| `/agents`         |                            | Open Agent Manager Panel for background subagents                         |
+| `/btw <query>`    |                            | Ask a background side question without interrupting the main conversation |
+| `/clear`          |                            | Clear the terminal and reset active conversation contexts                 |
+| `/config`         | `/settings`                | Open the interactive Settings Editor Overlay                              |
+| `/diff`           |                            | Show unified diff of modified workspace files                             |
+| `/exit`           |                            | Close the TUI session and restore the host shell                          |
+| `/fast`           |                            | Enable fast mode for quick actions                                        |
+| `/fork`           | `/branch`                  | Clone the current conversation into a parallel session                    |
+| `/hooks`          |                            | Browse active pre-flight/post-format script hooks                         |
+| `/keybindings`    |                            | Open the keyboard shortcut editor                                         |
+| `/logout`         |                            | Disconnect profile and purge auth tokens from secure keyring              |
+| `/mcp`            |                            | Open the MCP server manager                                               |
+| `/model`          |                            | Choose preferred reasoning model; persists across sessions                |
+| `/open <path>`    |                            | Force a path to open in the default system editor                         |
+| `/permissions`    |                            | Switch global permission presets                                          |
+| `/planning`       |                            | Enable multi-turn plan generation mode                                    |
+| `/rename <name>`  |                            | Rename the current session thread                                         |
+| `/resume`         | `/switch`, `/conversation` | Open conversation picker                                                  |
+| `/rewind`         | `/undo`                    | Roll back conversation history to a previous message                      |
+| `/skills`         |                            | Browse loaded local and global Agent Skills                               |
+| `/statusline`     |                            | Open status bar customization                                             |
+| `/tasks`          |                            | Open task manager for background shell execution logs                     |
+| `/title [on/off]` |                            | Toggle or set terminal window title updates                               |
+| `/usage`          |                            | Open offline developer help in the terminal                               |
 
 ## Essential keybindings
 
-| Key | Action |
-| --- | --- |
-| `Esc` | Cancel stream, close panels, clear prompt |
-| `Ctrl+C` | Terminate CLI session |
-| `Ctrl+L` | Clear terminal buffer |
-| `Enter` | Submit prompt or confirm selection |
-| `Shift+Enter` / `Ctrl+J` | Insert newline without submitting |
-| `Ctrl+R` | Open Artifact Review Panel |
-| `Ctrl+G` | Edit prompt in `$EDITOR` |
-| `Ctrl+V` | Paste media from clipboard |
-| `Ctrl+O` | Toggle tool reasoning output |
-| `Ctrl+K` | Fast-approve a pending subagent action |
-| `Alt+J` | Move to next subagent awaiting approval |
-| `Ctrl+A` / `Ctrl+E` | Move cursor to line start/end |
-| `Ctrl+Z` / `Ctrl+Shift+Z` | Undo/redo text edit |
-| `y` / `n` | Approve/reject tool command or artifact |
-| `Shift+A` | Approve all artifacts in review panel |
-| `Ctrl+D` | Exit CLI, same as `/exit` |
-| `Ctrl+Z` | Suspend CLI to background |
+| Key                       | Action                                    |
+| ------------------------- | ----------------------------------------- |
+| `Esc`                     | Cancel stream, close panels, clear prompt |
+| `Ctrl+C`                  | Terminate CLI session                     |
+| `Ctrl+L`                  | Clear terminal buffer                     |
+| `Enter`                   | Submit prompt or confirm selection        |
+| `Shift+Enter` / `Ctrl+J`  | Insert newline without submitting         |
+| `Ctrl+R`                  | Open Artifact Review Panel                |
+| `Ctrl+G`                  | Edit prompt in `$EDITOR`                  |
+| `Ctrl+V`                  | Paste media from clipboard                |
+| `Ctrl+O`                  | Toggle tool reasoning output              |
+| `Ctrl+K`                  | Fast-approve a pending subagent action    |
+| `Alt+J`                   | Move to next subagent awaiting approval   |
+| `Ctrl+A` / `Ctrl+E`       | Move cursor to line start/end             |
+| `Ctrl+Z` / `Ctrl+Shift+Z` | Undo/redo text edit                       |
+| `y` / `n`                 | Approve/reject tool command or artifact   |
+| `Shift+A`                 | Approve all artifacts in review panel     |
+| `Ctrl+D`                  | Exit CLI, same as `/exit`                 |
+| `Ctrl+Z`                  | Suspend CLI to background                 |
 
 ## Interaction tips
 

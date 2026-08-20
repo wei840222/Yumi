@@ -10,13 +10,13 @@ Both surfaces share the same agent harness, so improvements to reasoning, tool u
 
 ## Local files
 
-| Purpose | Path |
-| --- | --- |
-| Settings | `~/.gemini/antigravity-cli/settings.json` |
-| Keybindings | `~/.gemini/antigravity-cli/keybindings.json` |
-| MCP config | `~/.gemini/antigravity-cli/mcp_config.json` |
-| Conversations | `~/.gemini/antigravity-cli/conversations/` |
-| History | `~/.gemini/antigravity-cli/history.jsonl` |
+| Purpose       | Path                                         |
+| ------------- | -------------------------------------------- |
+| Settings      | `~/.gemini/antigravity-cli/settings.json`    |
+| Keybindings   | `~/.gemini/antigravity-cli/keybindings.json` |
+| MCP config    | `~/.gemini/antigravity-cli/mcp_config.json`  |
+| Conversations | `~/.gemini/antigravity-cli/conversations/`   |
+| History       | `~/.gemini/antigravity-cli/history.jsonl`    |
 
 Prefer TUI editors before direct JSON edits:
 
@@ -40,10 +40,10 @@ Common keys:
 
 ## Skills paths
 
-| Scope | Path |
-| --- | --- |
-| Global shared | `~/.gemini/antigravity-cli/skills/` |
-| Workspace project | `.agents/skills/` |
+| Scope             | Path                                |
+| ----------------- | ----------------------------------- |
+| Global shared     | `~/.gemini/antigravity-cli/skills/` |
+| Workspace project | `.agents/skills/`                   |
 
 ## Platform notes
 

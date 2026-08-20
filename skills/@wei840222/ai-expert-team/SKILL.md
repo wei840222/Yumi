@@ -6,8 +6,20 @@ author: Hermes Agent
 license: MIT-0
 metadata:
   hermes:
-    tags: [multi-agent, orchestration, expert-council, prompt-engineering, verification]
-    related_skills: [prompt-engineering-expert, autonomous-ai-agents, planning-and-task-breakdown]
+    tags:
+      [
+        multi-agent,
+        orchestration,
+        expert-council,
+        prompt-engineering,
+        verification,
+      ]
+    related_skills:
+      [
+        prompt-engineering-expert,
+        autonomous-ai-agents,
+        planning-and-task-breakdown,
+      ]
 ---
 
 # AI Expert Team
@@ -106,6 +118,7 @@ Every Expert Council run must produce persistent artifacts in the filesystem. Th
 ### Run ID Convention
 
 Use a custom run ID that is meaningful for the task. Examples:
+
 - `k8s-migration-2026-07-05`
 - `pricing-strategy-q3`
 - `security-audit-auth-flow`
@@ -334,17 +347,17 @@ Responsible exit must include expert, task, failure mode, attempts, excluded pat
 
 ## Failure Branches
 
-| Trigger | Required action | Fallback if still unresolved |
-|---|---|---|
-| Context is insufficient for independent specialists | Ask one focused clarification, or continue with explicitly bounded assumptions if the user asked not to pause. | Return PARTIAL with the missing context named and the narrowest useful next step. |
-| The task is simple, urgent, or only a direct lookup/edit | Do not start the council. Answer directly or route to the appropriate simpler workflow. | If the user insists on the council, run a lightweight 1 CEO + 1 verifier review and state that full orchestration is unnecessary. |
-| A specialist requires unavailable tools or inaccessible sources | Replace the specialist with a tool-compatible role, or mark the check as unavailable before dispatch. | Return PARTIAL and name the blocked evidence instead of inventing results. |
-| A verifier returns FAIL | Do not use the failed claim as support for the recommendation. Retry once with corrected evidence or remove the claim. | Responsible exit: record the failed claim, evidence checked, and the safest recommendation that does not depend on it. |
-| A verifier returns PARTIAL | Keep the claim conditional and name the missing check. | Final synthesis must mark the recommendation as conditional if it depends on the PARTIAL claim. |
-| Experts disagree on a material point | CEO states the decision rule, evidence hierarchy, and what would change the recommendation. | Keep the disagreement visible in final synthesis and assign one concrete verification step. |
-| Specialist output violates scope or lacks evidence | Challenge once with the missing contract item. | Discard or downgrade the report; do not pad the final synthesis with unsupported material. |
-| More than 5 specialists seem necessary | Regroup expert needs into fewer broader deliverables before dispatch. | 🔴 CHECKPOINT: ask the user before exceeding 5 specialists. |
-| Latest user request is read-only | Every handoff must explicitly forbid edit, stage, commit, push, deploy, send, publish, and external mutation. | Stop and ask for authorization before any mutation. |
+| Trigger                                                         | Required action                                                                                                        | Fallback if still unresolved                                                                                                      |
+| --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Context is insufficient for independent specialists             | Ask one focused clarification, or continue with explicitly bounded assumptions if the user asked not to pause.         | Return PARTIAL with the missing context named and the narrowest useful next step.                                                 |
+| The task is simple, urgent, or only a direct lookup/edit        | Do not start the council. Answer directly or route to the appropriate simpler workflow.                                | If the user insists on the council, run a lightweight 1 CEO + 1 verifier review and state that full orchestration is unnecessary. |
+| A specialist requires unavailable tools or inaccessible sources | Replace the specialist with a tool-compatible role, or mark the check as unavailable before dispatch.                  | Return PARTIAL and name the blocked evidence instead of inventing results.                                                        |
+| A verifier returns FAIL                                         | Do not use the failed claim as support for the recommendation. Retry once with corrected evidence or remove the claim. | Responsible exit: record the failed claim, evidence checked, and the safest recommendation that does not depend on it.            |
+| A verifier returns PARTIAL                                      | Keep the claim conditional and name the missing check.                                                                 | Final synthesis must mark the recommendation as conditional if it depends on the PARTIAL claim.                                   |
+| Experts disagree on a material point                            | CEO states the decision rule, evidence hierarchy, and what would change the recommendation.                            | Keep the disagreement visible in final synthesis and assign one concrete verification step.                                       |
+| Specialist output violates scope or lacks evidence              | Challenge once with the missing contract item.                                                                         | Discard or downgrade the report; do not pad the final synthesis with unsupported material.                                        |
+| More than 5 specialists seem necessary                          | Regroup expert needs into fewer broader deliverables before dispatch.                                                  | 🔴 CHECKPOINT: ask the user before exceeding 5 specialists.                                                                       |
+| Latest user request is read-only                                | Every handoff must explicitly forbid edit, stage, commit, push, deploy, send, publish, and external mutation.          | Stop and ask for authorization before any mutation.                                                                               |
 
 ## Final Synthesis Contract
 

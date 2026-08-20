@@ -10,13 +10,13 @@ Both surfaces share the same agent harness and synchronize core preferences, per
 
 ## Platform comparison
 
-| Need | Prefer |
-| --- | --- |
-| Fast local terminal iteration | CLI |
-| SSH, headless, tmux, terminal multiplexers | CLI |
-| Scriptable one-shot prompts | CLI |
-| Visual project management | Antigravity 2.0 |
-| Rich desktop artifact review | Antigravity 2.0 |
+| Need                                         | Prefer                             |
+| -------------------------------------------- | ---------------------------------- |
+| Fast local terminal iteration                | CLI                                |
+| SSH, headless, tmux, terminal multiplexers   | CLI                                |
+| Scriptable one-shot prompts                  | CLI                                |
+| Visual project management                    | Antigravity 2.0                    |
+| Rich desktop artifact review                 | Antigravity 2.0                    |
 | Continue a complex terminal session visually | Export/continue in Antigravity 2.0 |
 
 ## Reliable agent workflow

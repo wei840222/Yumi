@@ -14,19 +14,19 @@ Use this skill to interact with Jules (`jules`), Google's autonomous AI coding a
 
 ## Quick reference
 
-| Goal | Command |
-| --- | --- |
-| Launch interactive TUI | `jules` |
-| Delegate task (current repo) | `jules new "task description"` |
+| Goal                          | Command                                            |
+| ----------------------------- | -------------------------------------------------- |
+| Launch interactive TUI        | `jules`                                            |
+| Delegate task (current repo)  | `jules new "task description"`                     |
 | Delegate task (specific repo) | `jules new --repo <owner/repo> "task description"` |
-| Run parallel attempts | `jules new --parallel <1-5> "task description"` |
-| Pipe prompt from stdin | `cat task.md \| jules new` |
-| List remote sessions | `jules remote list --session` |
-| List connected repos | `jules remote list --repo` |
-| Pull patch | `jules remote pull --session <id>` |
-| Pull and apply patch | `jules remote pull --session <id> --apply` |
-| Clone & apply in one step | `jules teleport <id>` |
-| Auth status & lifecycle | `jules login` / `jules logout` |
+| Run parallel attempts         | `jules new --parallel <1-5> "task description"`    |
+| Pipe prompt from stdin        | `cat task.md \| jules new`                         |
+| List remote sessions          | `jules remote list --session`                      |
+| List connected repos          | `jules remote list --repo`                         |
+| Pull patch                    | `jules remote pull --session <id>`                 |
+| Pull and apply patch          | `jules remote pull --session <id> --apply`         |
+| Clone & apply in one step     | `jules teleport <id>`                              |
+| Auth status & lifecycle       | `jules login` / `jules logout`                     |
 
 ## Core workflows
 
