@@ -1,4 +1,5 @@
 ---
+name: explore
 description: "Codebase search specialist. Use when you need to find files, symbols, implementations, references, call paths, config, tests, or trace execution flow across a codebase. Use when the module/file is unknown, the request spans layers, or multiple search angles are needed. Do NOT use when the exact file is known and a single read suffices."
 mode: subagent
 ---

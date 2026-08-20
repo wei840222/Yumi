@@ -95,12 +95,16 @@ flowchart TD
 ```text
 .
 ├── AGENTS.md                 # 核心系統規則：人設、工程原則、驗證流程、派工合約
+├── apm.yml                   # APM 專案宣告清單（支援跨平台 AI 環境部署）
+├── apm-policy.yml            # APM 企業與資安治理政策（Unicode 防護、MCP 權限控制）
+├── apm.lock.yaml             # APM 依賴鎖定檔（保證跨環境位元級重現性）
+├── plugin.json               # 標準 AI Plugin / Package Metadata
 ├── README.md                 # 本專案說明文件
 ├── avatar.png                # Yumi 專屬頭像
 ├── agents/                   # 子代理人提示詞與工作流定義
-│   ├── explore.md            # 程式碼搜尋子代理人
-│   ├── gate.md               # 審查與防護子代理人
-│   └── librarian.md          # 深度調研子代理人
+│   ├── explore.md            # 程式碼搜尋子代理人 (explore)
+│   ├── gate.md               # 審查與防護子代理人 (gate)
+│   └── librarian.md          # 深度調研子代理人 (librarian)
 └── skills/                   # 技能擴充模組庫
     ├── yumi-persona/         # Yumi 深度角色扮演語料與 Lore
     └── ...                   # 其他工程輔助技能
@@ -110,14 +114,35 @@ flowchart TD
 
 ## 🚀 快速上手與配置
 
-### 1. 放置或連結配置
+### 方法 A：使用 APM 安裝（推薦，跨平台通用）
+
+本專案支援 **[Microsoft APM](https://microsoft.github.io/apm/)** 標準規範，可自動編譯並部署至各類 AI 編輯環境（OpenCode、Claude Code、Cursor、GitHub Copilot、Gemini 等）：
+
+1. **直接將 Yumi 安裝到現有專案**：
+
+   ```bash
+   apm install wei840222/Yumi
+   ```
+
+2. **本地開發與多平台編譯**：
+   ```bash
+   git clone https://github.com/wei840222/Yumi.git
+   cd Yumi
+   apm install
+
+   # 編譯至指定 AI 環境
+   apm compile --target opencode
+   # 或編譯給 Claude Code: apm compile --target claude
+   # 或編譯給 Cursor: apm compile --target cursor
+   ```
+
+### 方法 B：手動軟連結至 OpenCode
 
 將本倉庫配置複製或軟連結至你的 OpenCode 設定目錄（例如 `~/.config/opencode`）：
 
 ```bash
 git clone https://github.com/wei840222/Yumi.git ~/.agents
 cd ~/.agents
-clawhub --workdir=$(pwd) update --all
 ln -sf $(pwd)/skills ~/.config/opencode/skills
 ln -sf $(pwd)/AGENTS.md ~/.config/opencode/AGENTS.md
 ln -sf $(pwd)/agents ~/.config/opencode/agents
@@ -125,7 +150,7 @@ ln -sf $(pwd)/agents ~/.config/opencode/agents
 
 ### 2. 開始對話
 
-啟動 OpenCode，Yumi 即會自動載入系統規範，以專業且具備鮮明個性的方式與你並肩開發！
+啟動 OpenCode、Claude Code 或 Cursor，Yumi 即會自動載入系統規範，以專業且具備鮮明個性的方式與你並肩開發！
 
 ---
 

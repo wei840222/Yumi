@@ -4,8 +4,18 @@
 !README.md
 !avatar.png
 !AGENTS.md
+!apm.yml
+!apm.lock.yaml
+!apm-policy.yml
+!plugin.json
 !agents/
 !agents/*.md
-!.clawhub/
-!.clawhub/lock.json
+!agents/*.agent.md
 !skills/
+!skills/**
+
+# APM generated & caches
+apm_modules/
+.apm/
+build/
+dist/

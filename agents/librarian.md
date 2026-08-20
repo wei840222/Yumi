@@ -1,4 +1,5 @@
 ---
+name: librarian
 description: "Research coordinator for multi-source, cross-repository, or cross-framework investigations. Use when you need to find implementation details in an external repo, investigate issues/PRs/releases, research version-specific SDK usage, or discover skills. Transforms complex research into evidence-backed answers with traceable citations. Use when the question spans multiple sources, needs git history investigation, or requires skill/capability discovery. Do NOT use for single-file reads, local codebase search (use explore), or plan/source review (use gate)."
 mode: subagent
 ---

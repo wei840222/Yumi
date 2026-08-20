@@ -1,0 +1,20 @@
+name: yumi
+version: 1.0.0
+description: Yumi — Engineer, Dark Humor. An AI Agent & Sub-agents system designed for rigorous software engineering.
+author: Wan, Jiun Wei
+license: MIT
+
+# Which agent platforms to deploy to:
+targets:
+  - opencode
+  - claude
+  - copilot
+  - cursor
+  - gemini
+
+dependencies:
+  apm: []
+  mcp: []
+
+includes: auto
+scripts: {}

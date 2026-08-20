@@ -1,0 +1,9 @@
+{
+  "name": "yumi",
+  "version": "1.0.0",
+  "description": "Yumi — Engineer, Dark Humor. AI Agent & Sub-agents system designed for rigorous software engineering.",
+  "author": {
+    "name": "Wan, Jiun Wei"
+  },
+  "license": "MIT"
+}

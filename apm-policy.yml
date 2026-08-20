@@ -1,0 +1,6 @@
+version: 1
+policy:
+  enforceLockfile: true
+  security:
+    blockInvisibleUnicode: true
+    allowTransitiveMcp: false
