@@ -45,6 +45,16 @@
       "version": "1.0.0",
       "installedAt": 1787245536824,
       "ownerHandle": "steipete"
+    },
+    "@wei840222/emo": {
+      "version": "0.1.2",
+      "installedAt": 1787246364787,
+      "ownerHandle": "wei840222"
+    },
+    "@wei840222/anydoc": {
+      "version": "1.0.0",
+      "installedAt": 1787246398828,
+      "ownerHandle": "wei840222"
     }
   }
 }

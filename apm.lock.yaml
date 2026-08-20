@@ -1,11 +1,376 @@
 lockfile_version: '1'
-generated_at: '2026-08-20T16:47:44.388856+00:00'
+generated_at: '2026-08-20T17:19:46.539637+00:00'
 apm_version: 0.26.0
 dependencies:
+- repo_url: _local/ai-expert-team
+  name: ai-expert-team
+  version: 0.0.0
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/ai-expert-team
+  - .agents/skills/ai-expert-team/.clawhub/origin.json
+  - .agents/skills/ai-expert-team/README.md
+  - .agents/skills/ai-expert-team/SKILL.md
+  - .agents/skills/ai-expert-team/_meta.json
+  - .agents/skills/ai-expert-team/references/ceo-profiles.md
+  - .agents/skills/ai-expert-team/references/source-research-snapshot.md
+  - .agents/skills/ai-expert-team/references/specialist-selection.md
+  - .agents/skills/ai-expert-team/references/validation-case-library.md
+  - .agents/skills/ai-expert-team/references/validation-cycle-closure.md
+  - .agents/skills/ai-expert-team/skill-card.md
+  - .agents/skills/ai-expert-team/templates/expert-handoff.md
+  - .agents/skills/ai-expert-team/templates/final-synthesis.md
+  - .agents/skills/ai-expert-team/test-prompts.json
+  - .claude/skills/ai-expert-team
+  - .claude/skills/ai-expert-team/.clawhub/origin.json
+  - .claude/skills/ai-expert-team/README.md
+  - .claude/skills/ai-expert-team/SKILL.md
+  - .claude/skills/ai-expert-team/_meta.json
+  - .claude/skills/ai-expert-team/references/ceo-profiles.md
+  - .claude/skills/ai-expert-team/references/source-research-snapshot.md
+  - .claude/skills/ai-expert-team/references/specialist-selection.md
+  - .claude/skills/ai-expert-team/references/validation-case-library.md
+  - .claude/skills/ai-expert-team/references/validation-cycle-closure.md
+  - .claude/skills/ai-expert-team/skill-card.md
+  - .claude/skills/ai-expert-team/templates/expert-handoff.md
+  - .claude/skills/ai-expert-team/templates/final-synthesis.md
+  - .claude/skills/ai-expert-team/test-prompts.json
+  deployed_file_hashes:
+    .agents/skills/ai-expert-team/.clawhub/origin.json: sha256:787a7f152d4aa91350894b23b4243797b1d4d40737608af47d4af0ab5a8c0c83
+    .agents/skills/ai-expert-team/README.md: sha256:146ecb76155ac7aa61f872eeab2ad61535fe20ec61bf0fac2c1e5fcb6f2f7659
+    .agents/skills/ai-expert-team/SKILL.md: sha256:e71df26be53edea12d095d3173619cdb0a7f86c16f78f8f2f33490e0b94701ea
+    .agents/skills/ai-expert-team/_meta.json: sha256:ac5560f1d2427f24bc3548c5bff0c02f411929aa2d6f83f258b0b6eb5b5e3ca9
+    .agents/skills/ai-expert-team/references/ceo-profiles.md: sha256:8a7696ce5721c5438879598ac12670a1e14a19a926b6e929df3328ff75424e56
+    .agents/skills/ai-expert-team/references/source-research-snapshot.md: sha256:409ec2e64ffa4df9166b5f324f030d4bb7431734a423e5ba1c1b4806fffb17bf
+    .agents/skills/ai-expert-team/references/specialist-selection.md: sha256:2ea46a8696bf3a5a9af63926591b140859b63faef477f9585d57299f84d97245
+    .agents/skills/ai-expert-team/references/validation-case-library.md: sha256:f5d76b09d7a1abb30acaeb10fc73fcb13a89b6373ccc1033ab8690eb66223d03
+    .agents/skills/ai-expert-team/references/validation-cycle-closure.md: sha256:ec85c24134275d238e61cfcaf0b83fb01e5d4575cf62cb6468b7557c27c98043
+    .agents/skills/ai-expert-team/skill-card.md: sha256:fb2c58e8ad54771798b39b2446c3adfc600371a3255f98172dd68cab4ac8cadd
+    .agents/skills/ai-expert-team/templates/expert-handoff.md: sha256:4687518ced65d2059073af6bf23dda98eb121a525f4be374299dee075a76535a
+    .agents/skills/ai-expert-team/templates/final-synthesis.md: sha256:c6d8be01660fd7b95f9572a92e8d69a71ac6236e5ec40a1d83abdb1a2ad59533
+    .agents/skills/ai-expert-team/test-prompts.json: sha256:713eba87567db78fdeb6ab6cba4f21f462f28a3933a6e5ff21c2a0a7c413abf6
+    .claude/skills/ai-expert-team/.clawhub/origin.json: sha256:787a7f152d4aa91350894b23b4243797b1d4d40737608af47d4af0ab5a8c0c83
+    .claude/skills/ai-expert-team/README.md: sha256:146ecb76155ac7aa61f872eeab2ad61535fe20ec61bf0fac2c1e5fcb6f2f7659
+    .claude/skills/ai-expert-team/SKILL.md: sha256:e71df26be53edea12d095d3173619cdb0a7f86c16f78f8f2f33490e0b94701ea
+    .claude/skills/ai-expert-team/_meta.json: sha256:ac5560f1d2427f24bc3548c5bff0c02f411929aa2d6f83f258b0b6eb5b5e3ca9
+    .claude/skills/ai-expert-team/references/ceo-profiles.md: sha256:8a7696ce5721c5438879598ac12670a1e14a19a926b6e929df3328ff75424e56
+    .claude/skills/ai-expert-team/references/source-research-snapshot.md: sha256:409ec2e64ffa4df9166b5f324f030d4bb7431734a423e5ba1c1b4806fffb17bf
+    .claude/skills/ai-expert-team/references/specialist-selection.md: sha256:2ea46a8696bf3a5a9af63926591b140859b63faef477f9585d57299f84d97245
+    .claude/skills/ai-expert-team/references/validation-case-library.md: sha256:f5d76b09d7a1abb30acaeb10fc73fcb13a89b6373ccc1033ab8690eb66223d03
+    .claude/skills/ai-expert-team/references/validation-cycle-closure.md: sha256:ec85c24134275d238e61cfcaf0b83fb01e5d4575cf62cb6468b7557c27c98043
+    .claude/skills/ai-expert-team/skill-card.md: sha256:fb2c58e8ad54771798b39b2446c3adfc600371a3255f98172dd68cab4ac8cadd
+    .claude/skills/ai-expert-team/templates/expert-handoff.md: sha256:4687518ced65d2059073af6bf23dda98eb121a525f4be374299dee075a76535a
+    .claude/skills/ai-expert-team/templates/final-synthesis.md: sha256:c6d8be01660fd7b95f9572a92e8d69a71ac6236e5ec40a1d83abdb1a2ad59533
+    .claude/skills/ai-expert-team/test-prompts.json: sha256:713eba87567db78fdeb6ab6cba4f21f462f28a3933a6e5ff21c2a0a7c413abf6
+  source: local
+  local_path: ./skills/@wei840222/ai-expert-team
+- repo_url: _local/antigravity-cli
+  name: antigravity-cli
+  version: 0.0.0
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/antigravity-cli
+  - .agents/skills/antigravity-cli/.clawhub/origin.json
+  - .agents/skills/antigravity-cli/SKILL.md
+  - .agents/skills/antigravity-cli/_meta.json
+  - .agents/skills/antigravity-cli/references/artifacts.md
+  - .agents/skills/antigravity-cli/references/cli-usage.md
+  - .agents/skills/antigravity-cli/references/config-platform.md
+  - .agents/skills/antigravity-cli/references/overview-workflows.md
+  - .agents/skills/antigravity-cli/references/security-permissions.md
+  - .agents/skills/antigravity-cli/references/tui.md
+  - .agents/skills/antigravity-cli/skill-card.md
+  - .claude/skills/antigravity-cli
+  - .claude/skills/antigravity-cli/.clawhub/origin.json
+  - .claude/skills/antigravity-cli/SKILL.md
+  - .claude/skills/antigravity-cli/_meta.json
+  - .claude/skills/antigravity-cli/references/artifacts.md
+  - .claude/skills/antigravity-cli/references/cli-usage.md
+  - .claude/skills/antigravity-cli/references/config-platform.md
+  - .claude/skills/antigravity-cli/references/overview-workflows.md
+  - .claude/skills/antigravity-cli/references/security-permissions.md
+  - .claude/skills/antigravity-cli/references/tui.md
+  - .claude/skills/antigravity-cli/skill-card.md
+  deployed_file_hashes:
+    .agents/skills/antigravity-cli/.clawhub/origin.json: sha256:b40dffdb1ab1198821640dd905a901c5436e4037165d8eac8ae8747696710a47
+    .agents/skills/antigravity-cli/SKILL.md: sha256:9e388fb1162e356f19bf04167d2f0e0d28f591fad3005327a294ed5b75ce7be0
+    .agents/skills/antigravity-cli/_meta.json: sha256:94c78d4eadbbb13cea29fc5b9fed01de587fe03d716e06063044fa15a369ab0f
+    .agents/skills/antigravity-cli/references/artifacts.md: sha256:fcef374ba38aab33d17e054e1b55daaf3317b6e5f32df138daf648ae0c8611bf
+    .agents/skills/antigravity-cli/references/cli-usage.md: sha256:9b130a2c078d1a19102baaaac8fbf27224cae9773bb38ddea6c1b49ea1e53c9d
+    .agents/skills/antigravity-cli/references/config-platform.md: sha256:54e7ed3d32b774497c42d425bde964fc6a63d018d79fddebf34803339be84ce0
+    .agents/skills/antigravity-cli/references/overview-workflows.md: sha256:5251e9fd675f25effa057b3cff4c29be5c218d75eaca3b1b7f044658bb2e61aa
+    .agents/skills/antigravity-cli/references/security-permissions.md: sha256:9b2c87865c9de79547357970cc0240808f8f66fc289cbcf0cd3d6f5c7c3e343a
+    .agents/skills/antigravity-cli/references/tui.md: sha256:f80469bdd76491fb15a331dd1fd2b4070e8ab4bd3eec99f9bf218acd47ee5e31
+    .agents/skills/antigravity-cli/skill-card.md: sha256:ba48c5992ece217b0945eaf9f5a2590cde58e812a49cb4c5fd8becd74e09fae0
+    .claude/skills/antigravity-cli/.clawhub/origin.json: sha256:b40dffdb1ab1198821640dd905a901c5436e4037165d8eac8ae8747696710a47
+    .claude/skills/antigravity-cli/SKILL.md: sha256:9e388fb1162e356f19bf04167d2f0e0d28f591fad3005327a294ed5b75ce7be0
+    .claude/skills/antigravity-cli/_meta.json: sha256:94c78d4eadbbb13cea29fc5b9fed01de587fe03d716e06063044fa15a369ab0f
+    .claude/skills/antigravity-cli/references/artifacts.md: sha256:fcef374ba38aab33d17e054e1b55daaf3317b6e5f32df138daf648ae0c8611bf
+    .claude/skills/antigravity-cli/references/cli-usage.md: sha256:9b130a2c078d1a19102baaaac8fbf27224cae9773bb38ddea6c1b49ea1e53c9d
+    .claude/skills/antigravity-cli/references/config-platform.md: sha256:54e7ed3d32b774497c42d425bde964fc6a63d018d79fddebf34803339be84ce0
+    .claude/skills/antigravity-cli/references/overview-workflows.md: sha256:5251e9fd675f25effa057b3cff4c29be5c218d75eaca3b1b7f044658bb2e61aa
+    .claude/skills/antigravity-cli/references/security-permissions.md: sha256:9b2c87865c9de79547357970cc0240808f8f66fc289cbcf0cd3d6f5c7c3e343a
+    .claude/skills/antigravity-cli/references/tui.md: sha256:f80469bdd76491fb15a331dd1fd2b4070e8ab4bd3eec99f9bf218acd47ee5e31
+    .claude/skills/antigravity-cli/skill-card.md: sha256:ba48c5992ece217b0945eaf9f5a2590cde58e812a49cb4c5fd8becd74e09fae0
+  source: local
+  local_path: ./skills/@wei840222/antigravity-cli
+- repo_url: _local/codegraph
+  name: codegraph
+  version: 0.0.0
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/codegraph
+  - .agents/skills/codegraph/.clawhub/origin.json
+  - .agents/skills/codegraph/SKILL.md
+  - .agents/skills/codegraph/_meta.json
+  - .agents/skills/codegraph/references/cli-reference.md
+  - .agents/skills/codegraph/skill-card.md
+  - .claude/skills/codegraph
+  - .claude/skills/codegraph/.clawhub/origin.json
+  - .claude/skills/codegraph/SKILL.md
+  - .claude/skills/codegraph/_meta.json
+  - .claude/skills/codegraph/references/cli-reference.md
+  - .claude/skills/codegraph/skill-card.md
+  deployed_file_hashes:
+    .agents/skills/codegraph/.clawhub/origin.json: sha256:a1cc8e031e9dcec09d8eb2c6d19a8ae2372dca29959950d5be29438ec65ccdad
+    .agents/skills/codegraph/SKILL.md: sha256:d61410fd39fc5889e4fd9b4815c090db9d6a93c6aa15e38a21cad2b12d2163cf
+    .agents/skills/codegraph/_meta.json: sha256:b73b7614da6507491ab3384f5d2467eec06722916d1cd056a1cf05dcaa5774e2
+    .agents/skills/codegraph/references/cli-reference.md: sha256:1fb69742330451252fe28886acfcd489ba8115bf517e215f7bf356c061e6f7a9
+    .agents/skills/codegraph/skill-card.md: sha256:0417a0d155d7e453a62cdc3d045e1bc3f26aed61919c95c50febe552e14339dc
+    .claude/skills/codegraph/.clawhub/origin.json: sha256:a1cc8e031e9dcec09d8eb2c6d19a8ae2372dca29959950d5be29438ec65ccdad
+    .claude/skills/codegraph/SKILL.md: sha256:d61410fd39fc5889e4fd9b4815c090db9d6a93c6aa15e38a21cad2b12d2163cf
+    .claude/skills/codegraph/_meta.json: sha256:b73b7614da6507491ab3384f5d2467eec06722916d1cd056a1cf05dcaa5774e2
+    .claude/skills/codegraph/references/cli-reference.md: sha256:1fb69742330451252fe28886acfcd489ba8115bf517e215f7bf356c061e6f7a9
+    .claude/skills/codegraph/skill-card.md: sha256:0417a0d155d7e453a62cdc3d045e1bc3f26aed61919c95c50febe552e14339dc
+  source: local
+  local_path: ./skills/@wei840222/codegraph
+- repo_url: _local/emo
+  name: emo
+  version: 0.0.0
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/emo
+  - .agents/skills/emo/.clawhub/origin.json
+  - .agents/skills/emo/SKILL.md
+  - .agents/skills/emo/_meta.json
+  - .agents/skills/emo/skill-card.md
+  - .claude/skills/emo
+  - .claude/skills/emo/.clawhub/origin.json
+  - .claude/skills/emo/SKILL.md
+  - .claude/skills/emo/_meta.json
+  - .claude/skills/emo/skill-card.md
+  deployed_file_hashes:
+    .agents/skills/emo/.clawhub/origin.json: sha256:08d8fdcb8ffe4e0f9a1e6de73b735dd540542df085d682792b5dc4448be1ab16
+    .agents/skills/emo/SKILL.md: sha256:36def5d6d8f66e2e78c5b44f8f0f937ff7b6186dce02104a67754a74114085d7
+    .agents/skills/emo/_meta.json: sha256:5f0705dffd5fce68abdcdcca5c0d8530b23d8a4a7e86f942179bbb656f8aac49
+    .agents/skills/emo/skill-card.md: sha256:c720991f0f1c34e3d8e392cd59147df24613d234467b8c8568dab337f38055d2
+    .claude/skills/emo/.clawhub/origin.json: sha256:08d8fdcb8ffe4e0f9a1e6de73b735dd540542df085d682792b5dc4448be1ab16
+    .claude/skills/emo/SKILL.md: sha256:36def5d6d8f66e2e78c5b44f8f0f937ff7b6186dce02104a67754a74114085d7
+    .claude/skills/emo/_meta.json: sha256:5f0705dffd5fce68abdcdcca5c0d8530b23d8a4a7e86f942179bbb656f8aac49
+    .claude/skills/emo/skill-card.md: sha256:c720991f0f1c34e3d8e392cd59147df24613d234467b8c8568dab337f38055d2
+  source: local
+  local_path: ./skills/@wei840222/emo
+- repo_url: _local/git-master
+  name: git-master
+  version: 0.0.0
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/git-master
+  - .agents/skills/git-master/.clawhub/origin.json
+  - .agents/skills/git-master/SKILL.md
+  - .agents/skills/git-master/_meta.json
+  - .agents/skills/git-master/skill-card.md
+  - .claude/skills/git-master
+  - .claude/skills/git-master/.clawhub/origin.json
+  - .claude/skills/git-master/SKILL.md
+  - .claude/skills/git-master/_meta.json
+  - .claude/skills/git-master/skill-card.md
+  deployed_file_hashes:
+    .agents/skills/git-master/.clawhub/origin.json: sha256:9794111b27392da6b45e2dea41362eaac17891d2e57b602186854ce1048b0868
+    .agents/skills/git-master/SKILL.md: sha256:db47d02705bc1adbaa504a28116696c8d58b3ad0e2682f2b0cbcebbe77f31776
+    .agents/skills/git-master/_meta.json: sha256:c75b9d85bacb6aa0eeebad0514cc09bfac9c773c8cd465746ac19043dfa042c5
+    .agents/skills/git-master/skill-card.md: sha256:7a478fabcecc3b5f0ee63e025b657bccc7b750877d89b33050bd6be8bf9262ee
+    .claude/skills/git-master/.clawhub/origin.json: sha256:9794111b27392da6b45e2dea41362eaac17891d2e57b602186854ce1048b0868
+    .claude/skills/git-master/SKILL.md: sha256:db47d02705bc1adbaa504a28116696c8d58b3ad0e2682f2b0cbcebbe77f31776
+    .claude/skills/git-master/_meta.json: sha256:c75b9d85bacb6aa0eeebad0514cc09bfac9c773c8cd465746ac19043dfa042c5
+    .claude/skills/git-master/skill-card.md: sha256:7a478fabcecc3b5f0ee63e025b657bccc7b750877d89b33050bd6be8bf9262ee
+  source: local
+  local_path: ./skills/@wei840222/git-master
+- repo_url: _local/gitea
+  name: gitea
+  version: 0.0.0
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/gitea
+  - .agents/skills/gitea/.clawhub/origin.json
+  - .agents/skills/gitea/SKILL.md
+  - .agents/skills/gitea/_meta.json
+  - .agents/skills/gitea/skill-card.md
+  - .claude/skills/gitea
+  - .claude/skills/gitea/.clawhub/origin.json
+  - .claude/skills/gitea/SKILL.md
+  - .claude/skills/gitea/_meta.json
+  - .claude/skills/gitea/skill-card.md
+  deployed_file_hashes:
+    .agents/skills/gitea/.clawhub/origin.json: sha256:d6ab686c620e9ab04b6974aa5efe82f983229029ebf1c73cce77bb3de556214c
+    .agents/skills/gitea/SKILL.md: sha256:bb61c469ec7e2a59db13615c6626c7c2238f5152e9173799948f52e599b16a64
+    .agents/skills/gitea/_meta.json: sha256:4d1f938c20dcf26924c59fa3cd4da57e0fed115e4ea5d91091d8ff9b9f337efa
+    .agents/skills/gitea/skill-card.md: sha256:850f85a972356d32a6a8eb2c3ec1c2023aba0afdea1d65eda960d73a0b1bf531
+    .claude/skills/gitea/.clawhub/origin.json: sha256:d6ab686c620e9ab04b6974aa5efe82f983229029ebf1c73cce77bb3de556214c
+    .claude/skills/gitea/SKILL.md: sha256:bb61c469ec7e2a59db13615c6626c7c2238f5152e9173799948f52e599b16a64
+    .claude/skills/gitea/_meta.json: sha256:4d1f938c20dcf26924c59fa3cd4da57e0fed115e4ea5d91091d8ff9b9f337efa
+    .claude/skills/gitea/skill-card.md: sha256:850f85a972356d32a6a8eb2c3ec1c2023aba0afdea1d65eda960d73a0b1bf531
+  source: local
+  local_path: ./skills/@wei840222/gitea
+- repo_url: _local/github
+  name: github
+  version: 0.0.0
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/github
+  - .agents/skills/github/.clawhub/origin.json
+  - .agents/skills/github/SKILL.md
+  - .agents/skills/github/_meta.json
+  - .agents/skills/github/skill-card.md
+  - .claude/skills/github
+  - .claude/skills/github/.clawhub/origin.json
+  - .claude/skills/github/SKILL.md
+  - .claude/skills/github/_meta.json
+  - .claude/skills/github/skill-card.md
+  deployed_file_hashes:
+    .agents/skills/github/.clawhub/origin.json: sha256:18cdb7f09442449abe9e04bb50b588d5950834b4308319a929c2041e8f0d286f
+    .agents/skills/github/SKILL.md: sha256:51b28818a6f0359287d5c8244a6fdc59a4ac5504596deb193b28b81832221c86
+    .agents/skills/github/_meta.json: sha256:56fb7f167484f71475e75387a58a1efc59db8d114180d5a1d9b91881debe53c1
+    .agents/skills/github/skill-card.md: sha256:354c1678ea2226b0c5bffa50cedc51cd629354a9f3590cfb1d5013406b7f1ea8
+    .claude/skills/github/.clawhub/origin.json: sha256:18cdb7f09442449abe9e04bb50b588d5950834b4308319a929c2041e8f0d286f
+    .claude/skills/github/SKILL.md: sha256:51b28818a6f0359287d5c8244a6fdc59a4ac5504596deb193b28b81832221c86
+    .claude/skills/github/_meta.json: sha256:56fb7f167484f71475e75387a58a1efc59db8d114180d5a1d9b91881debe53c1
+    .claude/skills/github/skill-card.md: sha256:354c1678ea2226b0c5bffa50cedc51cd629354a9f3590cfb1d5013406b7f1ea8
+  source: local
+  local_path: ./skills/@steipete/github
+- repo_url: _local/jules
+  name: jules
+  version: 0.0.0
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/jules
+  - .agents/skills/jules/.clawhub/origin.json
+  - .agents/skills/jules/SKILL.md
+  - .agents/skills/jules/_meta.json
+  - .agents/skills/jules/references/cli-reference.md
+  - .agents/skills/jules/skill-card.md
+  - .claude/skills/jules
+  - .claude/skills/jules/.clawhub/origin.json
+  - .claude/skills/jules/SKILL.md
+  - .claude/skills/jules/_meta.json
+  - .claude/skills/jules/references/cli-reference.md
+  - .claude/skills/jules/skill-card.md
+  deployed_file_hashes:
+    .agents/skills/jules/.clawhub/origin.json: sha256:ea249a21c3f2291f63a2f831410cb5b603e90f76cbb649fa7b86ae2192f0c6c9
+    .agents/skills/jules/SKILL.md: sha256:b80bb43a7dc8c593cae4bcb9b2f8ea3d8a6ab38922717f28a1e4e94a4ae3e879
+    .agents/skills/jules/_meta.json: sha256:0256f6c45c12925bd56b5b66df440a033b67748a70f1f2b4812856786242f8aa
+    .agents/skills/jules/references/cli-reference.md: sha256:4a7b07c2964c30f65c1e94f133a527b68aba5a22f719a870be385a1dcf38b853
+    .agents/skills/jules/skill-card.md: sha256:2ed5ab374fbc59e03049fc161a40a5c9d8b2c3e798d3dfaa4eb9a6d15a169ffb
+    .claude/skills/jules/.clawhub/origin.json: sha256:ea249a21c3f2291f63a2f831410cb5b603e90f76cbb649fa7b86ae2192f0c6c9
+    .claude/skills/jules/SKILL.md: sha256:b80bb43a7dc8c593cae4bcb9b2f8ea3d8a6ab38922717f28a1e4e94a4ae3e879
+    .claude/skills/jules/_meta.json: sha256:0256f6c45c12925bd56b5b66df440a033b67748a70f1f2b4812856786242f8aa
+    .claude/skills/jules/references/cli-reference.md: sha256:4a7b07c2964c30f65c1e94f133a527b68aba5a22f719a870be385a1dcf38b853
+    .claude/skills/jules/skill-card.md: sha256:2ed5ab374fbc59e03049fc161a40a5c9d8b2c3e798d3dfaa4eb9a6d15a169ffb
+  source: local
+  local_path: ./skills/@wei840222/jules
+- repo_url: _local/knative-serving
+  name: knative-serving
+  version: 0.0.0
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/knative-serving
+  - .agents/skills/knative-serving/.clawhub/origin.json
+  - .agents/skills/knative-serving/SKILL.md
+  - .agents/skills/knative-serving/_meta.json
+  - .agents/skills/knative-serving/references/autoscaling.md
+  - .agents/skills/knative-serving/references/common-errors.md
+  - .agents/skills/knative-serving/references/container-settings.md
+  - .agents/skills/knative-serving/references/debugging.md
+  - .agents/skills/knative-serving/references/kn-cli.md
+  - .agents/skills/knative-serving/references/networking.md
+  - .agents/skills/knative-serving/references/observability.md
+  - .agents/skills/knative-serving/references/overview-and-crds.md
+  - .agents/skills/knative-serving/references/revisions-and-traffic.md
+  - .agents/skills/knative-serving/skill-card.md
+  - .claude/skills/knative-serving
+  - .claude/skills/knative-serving/.clawhub/origin.json
+  - .claude/skills/knative-serving/SKILL.md
+  - .claude/skills/knative-serving/_meta.json
+  - .claude/skills/knative-serving/references/autoscaling.md
+  - .claude/skills/knative-serving/references/common-errors.md
+  - .claude/skills/knative-serving/references/container-settings.md
+  - .claude/skills/knative-serving/references/debugging.md
+  - .claude/skills/knative-serving/references/kn-cli.md
+  - .claude/skills/knative-serving/references/networking.md
+  - .claude/skills/knative-serving/references/observability.md
+  - .claude/skills/knative-serving/references/overview-and-crds.md
+  - .claude/skills/knative-serving/references/revisions-and-traffic.md
+  - .claude/skills/knative-serving/skill-card.md
+  deployed_file_hashes:
+    .agents/skills/knative-serving/.clawhub/origin.json: sha256:59a431414b6372ebc5a9e105298cbba2546c20f7fcb7024a1083b4b97ad9f30c
+    .agents/skills/knative-serving/SKILL.md: sha256:89dee3f512edfea7724d19b260a4a5a80a0b1090b59f978ab78cd74bcf0b8481
+    .agents/skills/knative-serving/_meta.json: sha256:d22d0bec2aa025e288f9b2eb2f0dd7e84b9d91007881d6b49482d99568351cc0
+    .agents/skills/knative-serving/references/autoscaling.md: sha256:54fdaf0ebc5e098491ff3c14531f72ecbdbae9b916f8062558918afd1a05f799
+    .agents/skills/knative-serving/references/common-errors.md: sha256:1b434d689fda587469fd003c065e0ab676adbc3a65269b14d22d2f642564b633
+    .agents/skills/knative-serving/references/container-settings.md: sha256:813d30d72b4170f59938337290065d2903398617507e590d1ecac584c7cd9085
+    .agents/skills/knative-serving/references/debugging.md: sha256:378d6935cb5258498580d12e3e5ae88a378919a0011df0a07957b03d9459de48
+    .agents/skills/knative-serving/references/kn-cli.md: sha256:8c3240f6b153af46fb7fc61e99397b241f124e16f4aa2a5024fc8eeca988cf1e
+    .agents/skills/knative-serving/references/networking.md: sha256:70816dd6e2db86fc007991d1b3ea8d9fdd508246097b842e11c3efa32fe12349
+    .agents/skills/knative-serving/references/observability.md: sha256:16b78c96be978ddf6fbf36df3e9f50b02690e527ea237e98b2b78fe5f3581f46
+    .agents/skills/knative-serving/references/overview-and-crds.md: sha256:2ae793630a933f7aed68fa0716f7df0e1f46cf204c1801a1ac0c477c85058ed0
+    .agents/skills/knative-serving/references/revisions-and-traffic.md: sha256:a65edd0d7ff8a091b675199780ae90dff5053fe3ee92e54581d67755fabb6796
+    .agents/skills/knative-serving/skill-card.md: sha256:05033a157b58b0de496fbbba60ee98c04f08bdc84cead15cca9495f2c0af4ba8
+    .claude/skills/knative-serving/.clawhub/origin.json: sha256:59a431414b6372ebc5a9e105298cbba2546c20f7fcb7024a1083b4b97ad9f30c
+    .claude/skills/knative-serving/SKILL.md: sha256:89dee3f512edfea7724d19b260a4a5a80a0b1090b59f978ab78cd74bcf0b8481
+    .claude/skills/knative-serving/_meta.json: sha256:d22d0bec2aa025e288f9b2eb2f0dd7e84b9d91007881d6b49482d99568351cc0
+    .claude/skills/knative-serving/references/autoscaling.md: sha256:54fdaf0ebc5e098491ff3c14531f72ecbdbae9b916f8062558918afd1a05f799
+    .claude/skills/knative-serving/references/common-errors.md: sha256:1b434d689fda587469fd003c065e0ab676adbc3a65269b14d22d2f642564b633
+    .claude/skills/knative-serving/references/container-settings.md: sha256:813d30d72b4170f59938337290065d2903398617507e590d1ecac584c7cd9085
+    .claude/skills/knative-serving/references/debugging.md: sha256:378d6935cb5258498580d12e3e5ae88a378919a0011df0a07957b03d9459de48
+    .claude/skills/knative-serving/references/kn-cli.md: sha256:8c3240f6b153af46fb7fc61e99397b241f124e16f4aa2a5024fc8eeca988cf1e
+    .claude/skills/knative-serving/references/networking.md: sha256:70816dd6e2db86fc007991d1b3ea8d9fdd508246097b842e11c3efa32fe12349
+    .claude/skills/knative-serving/references/observability.md: sha256:16b78c96be978ddf6fbf36df3e9f50b02690e527ea237e98b2b78fe5f3581f46
+    .claude/skills/knative-serving/references/overview-and-crds.md: sha256:2ae793630a933f7aed68fa0716f7df0e1f46cf204c1801a1ac0c477c85058ed0
+    .claude/skills/knative-serving/references/revisions-and-traffic.md: sha256:a65edd0d7ff8a091b675199780ae90dff5053fe3ee92e54581d67755fabb6796
+    .claude/skills/knative-serving/skill-card.md: sha256:05033a157b58b0de496fbbba60ee98c04f08bdc84cead15cca9495f2c0af4ba8
+  source: local
+  local_path: ./skills/@wei840222/knative-serving
+- repo_url: _local/mcporter
+  name: mcporter
+  version: 0.0.0
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/mcporter
+  - .agents/skills/mcporter/.clawhub/origin.json
+  - .agents/skills/mcporter/SKILL.md
+  - .agents/skills/mcporter/_meta.json
+  - .agents/skills/mcporter/skill-card.md
+  - .claude/skills/mcporter
+  - .claude/skills/mcporter/.clawhub/origin.json
+  - .claude/skills/mcporter/SKILL.md
+  - .claude/skills/mcporter/_meta.json
+  - .claude/skills/mcporter/skill-card.md
+  deployed_file_hashes:
+    .agents/skills/mcporter/.clawhub/origin.json: sha256:f021b31e3db5f86783e92234432b3bf73513deb562fa988536caf1e71eadb229
+    .agents/skills/mcporter/SKILL.md: sha256:475253164a0cca240679819497abd35bcd708162ab0f399990468d94d55a6d15
+    .agents/skills/mcporter/_meta.json: sha256:72acbc034c6a2727bd4309e9be79c3c41f2def8bf125e7f3477137fe67f34162
+    .agents/skills/mcporter/skill-card.md: sha256:4550653ee3f23dc054ed24da9d2c2516b6e7a69e1027c48551d4d79dde6493f5
+    .claude/skills/mcporter/.clawhub/origin.json: sha256:f021b31e3db5f86783e92234432b3bf73513deb562fa988536caf1e71eadb229
+    .claude/skills/mcporter/SKILL.md: sha256:475253164a0cca240679819497abd35bcd708162ab0f399990468d94d55a6d15
+    .claude/skills/mcporter/_meta.json: sha256:72acbc034c6a2727bd4309e9be79c3c41f2def8bf125e7f3477137fe67f34162
+    .claude/skills/mcporter/skill-card.md: sha256:4550653ee3f23dc054ed24da9d2c2516b6e7a69e1027c48551d4d79dde6493f5
+  source: local
+  local_path: ./skills/@steipete/mcporter
 - repo_url: wei840222/cx
   name: cx
   host: github.com
   resolved_commit: 005bd36a806996eea5efa5e3bcf20e62e10637d0
+  resolved_ref: local
   version: unknown
   package_type: skill_bundle
   deployed_files:
@@ -37,70 +402,336 @@ dependencies:
     .claude/skills/cx/references/setup-and-recovery.md: sha256:8345aedbb677430eccbe5d61ce89e0b3b1ee4f368e1634ed2dc6024d11093788
     .claude/skills/cx/references/usage-inventory.md: sha256:815ecf9d78af6bcaf6ade836368c934f55a2fba394fb7f359d880d04149da946
   content_hash: sha256:a46025900ffc34156e516953a43a8acb1c25a9d2189b842401112ffd11ad3466
+- repo_url: wei840222/qmd
+  name: qmd
+  host: github.com
+  resolved_commit: 92c4e4ca1a92610eab99e3e9a374e513256a4570
+  resolved_ref: local
+  version: 0.0.0
+  package_type: marketplace_plugin
+  deployed_files:
+  - .agents/skills/qmd
+  - .agents/skills/qmd/SKILL.md
+  - .agents/skills/qmd/references/mcp-setup.md
+  - .agents/skills/release
+  - .agents/skills/release/SKILL.md
+  - .agents/skills/release/scripts/install-hooks.sh
+  - .claude/skills/qmd
+  - .claude/skills/qmd/SKILL.md
+  - .claude/skills/qmd/references/mcp-setup.md
+  - .claude/skills/release
+  - .claude/skills/release/SKILL.md
+  - .claude/skills/release/scripts/install-hooks.sh
+  deployed_file_hashes:
+    .agents/skills/qmd/SKILL.md: sha256:665e037e3119fef68a418c6e8e2ead95e5067047b58d2a36abdc35c3e704f0c4
+    .agents/skills/qmd/references/mcp-setup.md: sha256:43e10ec943c0226fcf72b2ef3fc079bf937309834e43c5c42e8d226ec42d82af
+    .agents/skills/release/SKILL.md: sha256:59f4b99a7d3fe512324aca85f9fd704c0706da8368441821ecff5c63c53c602b
+    .agents/skills/release/scripts/install-hooks.sh: sha256:f83c116f95d7d8450ab6e6027bacf55923423377db009ceae5787459ace2103f
+    .claude/skills/qmd/SKILL.md: sha256:665e037e3119fef68a418c6e8e2ead95e5067047b58d2a36abdc35c3e704f0c4
+    .claude/skills/qmd/references/mcp-setup.md: sha256:43e10ec943c0226fcf72b2ef3fc079bf937309834e43c5c42e8d226ec42d82af
+    .claude/skills/release/SKILL.md: sha256:59f4b99a7d3fe512324aca85f9fd704c0706da8368441821ecff5c63c53c602b
+    .claude/skills/release/scripts/install-hooks.sh: sha256:f83c116f95d7d8450ab6e6027bacf55923423377db009ceae5787459ace2103f
+  content_hash: sha256:313a519842c399516f0d77bb3b1d3787b455b6863e3de6c90dc91284b23b5f4d
+- repo_url: wei840222/treemd
+  name: treemd
+  host: github.com
+  resolved_commit: b93749aa47502a58dff890f2d9fb9bba7b1ae6b5
+  resolved_ref: local
+  version: unknown
+  package_type: skill_bundle
+  deployed_files:
+  - .agents/skills/treemd
+  - .agents/skills/treemd/SKILL.md
+  - .agents/skills/treemd/references/query-language.md
+  - .claude/skills/treemd
+  - .claude/skills/treemd/SKILL.md
+  - .claude/skills/treemd/references/query-language.md
+  deployed_file_hashes:
+    .agents/skills/treemd/SKILL.md: sha256:a709de6bd5d35777c7e53b0bd7bf4e0e4024c17cea7d57b0a3bc445ae693962b
+    .agents/skills/treemd/references/query-language.md: sha256:a7b8615130bef06b5f57e7eecff6280565e357fcee2fcf6f233e212825dc4193
+    .claude/skills/treemd/SKILL.md: sha256:a709de6bd5d35777c7e53b0bd7bf4e0e4024c17cea7d57b0a3bc445ae693962b
+    .claude/skills/treemd/references/query-language.md: sha256:a7b8615130bef06b5f57e7eecff6280565e357fcee2fcf6f233e212825dc4193
+  content_hash: sha256:7dc59e718507254655064d22388fe373ecfbe1c803810a58486559c815bc5012
 deployments:
 - kind: project-relative
-  target: agents
-  value: .agents/skills/cx
+  target: claude
+  value: .claude/skills/ai-expert-team
   runtime: null
   scope: project
   owners:
-  - wei840222/cx
-  active_owner: wei840222/cx
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
   content_hash: null
 - kind: project-relative
-  target: agents
-  value: .agents/skills/cx/SKILL.md
+  target: claude
+  value: .claude/skills/ai-expert-team/.clawhub/origin.json
   runtime: null
   scope: project
   owners:
-  - wei840222/cx
-  active_owner: wei840222/cx
-  content_hash: sha256:460aaa8c5d62781e28c25927313b702a10e776261c7f3baeb7b4e5f58772f53d
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:787a7f152d4aa91350894b23b4243797b1d4d40737608af47d4af0ab5a8c0c83
 - kind: project-relative
-  target: agents
-  value: .agents/skills/cx/references/command-reference.md
+  target: claude
+  value: .claude/skills/ai-expert-team/README.md
   runtime: null
   scope: project
   owners:
-  - wei840222/cx
-  active_owner: wei840222/cx
-  content_hash: sha256:53520ac001c25142b868c371663f763e649090d847929e6509bdca95bdba32a2
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:146ecb76155ac7aa61f872eeab2ad61535fe20ec61bf0fac2c1e5fcb6f2f7659
 - kind: project-relative
-  target: agents
-  value: .agents/skills/cx/references/decision-tree.md
+  target: claude
+  value: .claude/skills/ai-expert-team/SKILL.md
   runtime: null
   scope: project
   owners:
-  - wei840222/cx
-  active_owner: wei840222/cx
-  content_hash: sha256:db7c5fd7c065ee2718bb21c05c0aea06c027fb06f98209287a3416161cfc2fd2
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:e71df26be53edea12d095d3173619cdb0a7f86c16f78f8f2f33490e0b94701ea
 - kind: project-relative
-  target: agents
-  value: .agents/skills/cx/references/output-examples.md
+  target: claude
+  value: .claude/skills/ai-expert-team/_meta.json
   runtime: null
   scope: project
   owners:
-  - wei840222/cx
-  active_owner: wei840222/cx
-  content_hash: sha256:a7259291ed49caceb48a97218347ef2f7558e8d3dd6bf3f9d6f76dd50594f2ff
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:ac5560f1d2427f24bc3548c5bff0c02f411929aa2d6f83f258b0b6eb5b5e3ca9
 - kind: project-relative
-  target: agents
-  value: .agents/skills/cx/references/setup-and-recovery.md
+  target: claude
+  value: .claude/skills/ai-expert-team/references/ceo-profiles.md
   runtime: null
   scope: project
   owners:
-  - wei840222/cx
-  active_owner: wei840222/cx
-  content_hash: sha256:8345aedbb677430eccbe5d61ce89e0b3b1ee4f368e1634ed2dc6024d11093788
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:8a7696ce5721c5438879598ac12670a1e14a19a926b6e929df3328ff75424e56
 - kind: project-relative
-  target: agents
-  value: .agents/skills/cx/references/usage-inventory.md
+  target: claude
+  value: .claude/skills/ai-expert-team/references/source-research-snapshot.md
   runtime: null
   scope: project
   owners:
-  - wei840222/cx
-  active_owner: wei840222/cx
-  content_hash: sha256:815ecf9d78af6bcaf6ade836368c934f55a2fba394fb7f359d880d04149da946
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:409ec2e64ffa4df9166b5f324f030d4bb7431734a423e5ba1c1b4806fffb17bf
+- kind: project-relative
+  target: claude
+  value: .claude/skills/ai-expert-team/references/specialist-selection.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:2ea46a8696bf3a5a9af63926591b140859b63faef477f9585d57299f84d97245
+- kind: project-relative
+  target: claude
+  value: .claude/skills/ai-expert-team/references/validation-case-library.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:f5d76b09d7a1abb30acaeb10fc73fcb13a89b6373ccc1033ab8690eb66223d03
+- kind: project-relative
+  target: claude
+  value: .claude/skills/ai-expert-team/references/validation-cycle-closure.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:ec85c24134275d238e61cfcaf0b83fb01e5d4575cf62cb6468b7557c27c98043
+- kind: project-relative
+  target: claude
+  value: .claude/skills/ai-expert-team/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:fb2c58e8ad54771798b39b2446c3adfc600371a3255f98172dd68cab4ac8cadd
+- kind: project-relative
+  target: claude
+  value: .claude/skills/ai-expert-team/templates/expert-handoff.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:4687518ced65d2059073af6bf23dda98eb121a525f4be374299dee075a76535a
+- kind: project-relative
+  target: claude
+  value: .claude/skills/ai-expert-team/templates/final-synthesis.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:c6d8be01660fd7b95f9572a92e8d69a71ac6236e5ec40a1d83abdb1a2ad59533
+- kind: project-relative
+  target: claude
+  value: .claude/skills/ai-expert-team/test-prompts.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:713eba87567db78fdeb6ab6cba4f21f462f28a3933a6e5ff21c2a0a7c413abf6
+- kind: project-relative
+  target: claude
+  value: .claude/skills/antigravity-cli
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/antigravity-cli/.clawhub/origin.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:b40dffdb1ab1198821640dd905a901c5436e4037165d8eac8ae8747696710a47
+- kind: project-relative
+  target: claude
+  value: .claude/skills/antigravity-cli/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:9e388fb1162e356f19bf04167d2f0e0d28f591fad3005327a294ed5b75ce7be0
+- kind: project-relative
+  target: claude
+  value: .claude/skills/antigravity-cli/_meta.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:94c78d4eadbbb13cea29fc5b9fed01de587fe03d716e06063044fa15a369ab0f
+- kind: project-relative
+  target: claude
+  value: .claude/skills/antigravity-cli/references/artifacts.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:fcef374ba38aab33d17e054e1b55daaf3317b6e5f32df138daf648ae0c8611bf
+- kind: project-relative
+  target: claude
+  value: .claude/skills/antigravity-cli/references/cli-usage.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:9b130a2c078d1a19102baaaac8fbf27224cae9773bb38ddea6c1b49ea1e53c9d
+- kind: project-relative
+  target: claude
+  value: .claude/skills/antigravity-cli/references/config-platform.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:54e7ed3d32b774497c42d425bde964fc6a63d018d79fddebf34803339be84ce0
+- kind: project-relative
+  target: claude
+  value: .claude/skills/antigravity-cli/references/overview-workflows.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:5251e9fd675f25effa057b3cff4c29be5c218d75eaca3b1b7f044658bb2e61aa
+- kind: project-relative
+  target: claude
+  value: .claude/skills/antigravity-cli/references/security-permissions.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:9b2c87865c9de79547357970cc0240808f8f66fc289cbcf0cd3d6f5c7c3e343a
+- kind: project-relative
+  target: claude
+  value: .claude/skills/antigravity-cli/references/tui.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:f80469bdd76491fb15a331dd1fd2b4070e8ab4bd3eec99f9bf218acd47ee5e31
+- kind: project-relative
+  target: claude
+  value: .claude/skills/antigravity-cli/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:ba48c5992ece217b0945eaf9f5a2590cde58e812a49cb4c5fd8becd74e09fae0
+- kind: project-relative
+  target: claude
+  value: .claude/skills/codegraph
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/codegraph
+  active_owner: ./skills/@wei840222/codegraph
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/codegraph/.clawhub/origin.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/codegraph
+  active_owner: ./skills/@wei840222/codegraph
+  content_hash: sha256:a1cc8e031e9dcec09d8eb2c6d19a8ae2372dca29959950d5be29438ec65ccdad
+- kind: project-relative
+  target: claude
+  value: .claude/skills/codegraph/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/codegraph
+  active_owner: ./skills/@wei840222/codegraph
+  content_hash: sha256:d61410fd39fc5889e4fd9b4815c090db9d6a93c6aa15e38a21cad2b12d2163cf
+- kind: project-relative
+  target: claude
+  value: .claude/skills/codegraph/_meta.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/codegraph
+  active_owner: ./skills/@wei840222/codegraph
+  content_hash: sha256:b73b7614da6507491ab3384f5d2467eec06722916d1cd056a1cf05dcaa5774e2
+- kind: project-relative
+  target: claude
+  value: .claude/skills/codegraph/references/cli-reference.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/codegraph
+  active_owner: ./skills/@wei840222/codegraph
+  content_hash: sha256:1fb69742330451252fe28886acfcd489ba8115bf517e215f7bf356c061e6f7a9
+- kind: project-relative
+  target: claude
+  value: .claude/skills/codegraph/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/codegraph
+  active_owner: ./skills/@wei840222/codegraph
+  content_hash: sha256:0417a0d155d7e453a62cdc3d045e1bc3f26aed61919c95c50febe552e14339dc
 - kind: project-relative
   target: claude
   value: .claude/skills/cx
@@ -164,3 +795,1317 @@ deployments:
   - wei840222/cx
   active_owner: wei840222/cx
   content_hash: sha256:815ecf9d78af6bcaf6ade836368c934f55a2fba394fb7f359d880d04149da946
+- kind: project-relative
+  target: claude
+  value: .claude/skills/emo
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/emo
+  active_owner: ./skills/@wei840222/emo
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/emo/.clawhub/origin.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/emo
+  active_owner: ./skills/@wei840222/emo
+  content_hash: sha256:08d8fdcb8ffe4e0f9a1e6de73b735dd540542df085d682792b5dc4448be1ab16
+- kind: project-relative
+  target: claude
+  value: .claude/skills/emo/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/emo
+  active_owner: ./skills/@wei840222/emo
+  content_hash: sha256:36def5d6d8f66e2e78c5b44f8f0f937ff7b6186dce02104a67754a74114085d7
+- kind: project-relative
+  target: claude
+  value: .claude/skills/emo/_meta.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/emo
+  active_owner: ./skills/@wei840222/emo
+  content_hash: sha256:5f0705dffd5fce68abdcdcca5c0d8530b23d8a4a7e86f942179bbb656f8aac49
+- kind: project-relative
+  target: claude
+  value: .claude/skills/emo/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/emo
+  active_owner: ./skills/@wei840222/emo
+  content_hash: sha256:c720991f0f1c34e3d8e392cd59147df24613d234467b8c8568dab337f38055d2
+- kind: project-relative
+  target: claude
+  value: .claude/skills/git-master
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/git-master
+  active_owner: ./skills/@wei840222/git-master
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/git-master/.clawhub/origin.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/git-master
+  active_owner: ./skills/@wei840222/git-master
+  content_hash: sha256:9794111b27392da6b45e2dea41362eaac17891d2e57b602186854ce1048b0868
+- kind: project-relative
+  target: claude
+  value: .claude/skills/git-master/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/git-master
+  active_owner: ./skills/@wei840222/git-master
+  content_hash: sha256:db47d02705bc1adbaa504a28116696c8d58b3ad0e2682f2b0cbcebbe77f31776
+- kind: project-relative
+  target: claude
+  value: .claude/skills/git-master/_meta.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/git-master
+  active_owner: ./skills/@wei840222/git-master
+  content_hash: sha256:c75b9d85bacb6aa0eeebad0514cc09bfac9c773c8cd465746ac19043dfa042c5
+- kind: project-relative
+  target: claude
+  value: .claude/skills/git-master/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/git-master
+  active_owner: ./skills/@wei840222/git-master
+  content_hash: sha256:7a478fabcecc3b5f0ee63e025b657bccc7b750877d89b33050bd6be8bf9262ee
+- kind: project-relative
+  target: claude
+  value: .claude/skills/gitea
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/gitea
+  active_owner: ./skills/@wei840222/gitea
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/gitea/.clawhub/origin.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/gitea
+  active_owner: ./skills/@wei840222/gitea
+  content_hash: sha256:d6ab686c620e9ab04b6974aa5efe82f983229029ebf1c73cce77bb3de556214c
+- kind: project-relative
+  target: claude
+  value: .claude/skills/gitea/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/gitea
+  active_owner: ./skills/@wei840222/gitea
+  content_hash: sha256:bb61c469ec7e2a59db13615c6626c7c2238f5152e9173799948f52e599b16a64
+- kind: project-relative
+  target: claude
+  value: .claude/skills/gitea/_meta.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/gitea
+  active_owner: ./skills/@wei840222/gitea
+  content_hash: sha256:4d1f938c20dcf26924c59fa3cd4da57e0fed115e4ea5d91091d8ff9b9f337efa
+- kind: project-relative
+  target: claude
+  value: .claude/skills/gitea/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/gitea
+  active_owner: ./skills/@wei840222/gitea
+  content_hash: sha256:850f85a972356d32a6a8eb2c3ec1c2023aba0afdea1d65eda960d73a0b1bf531
+- kind: project-relative
+  target: claude
+  value: .claude/skills/github
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/github
+  active_owner: ./skills/@steipete/github
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/github/.clawhub/origin.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/github
+  active_owner: ./skills/@steipete/github
+  content_hash: sha256:18cdb7f09442449abe9e04bb50b588d5950834b4308319a929c2041e8f0d286f
+- kind: project-relative
+  target: claude
+  value: .claude/skills/github/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/github
+  active_owner: ./skills/@steipete/github
+  content_hash: sha256:51b28818a6f0359287d5c8244a6fdc59a4ac5504596deb193b28b81832221c86
+- kind: project-relative
+  target: claude
+  value: .claude/skills/github/_meta.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/github
+  active_owner: ./skills/@steipete/github
+  content_hash: sha256:56fb7f167484f71475e75387a58a1efc59db8d114180d5a1d9b91881debe53c1
+- kind: project-relative
+  target: claude
+  value: .claude/skills/github/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/github
+  active_owner: ./skills/@steipete/github
+  content_hash: sha256:354c1678ea2226b0c5bffa50cedc51cd629354a9f3590cfb1d5013406b7f1ea8
+- kind: project-relative
+  target: claude
+  value: .claude/skills/jules
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/jules
+  active_owner: ./skills/@wei840222/jules
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/jules/.clawhub/origin.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/jules
+  active_owner: ./skills/@wei840222/jules
+  content_hash: sha256:ea249a21c3f2291f63a2f831410cb5b603e90f76cbb649fa7b86ae2192f0c6c9
+- kind: project-relative
+  target: claude
+  value: .claude/skills/jules/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/jules
+  active_owner: ./skills/@wei840222/jules
+  content_hash: sha256:b80bb43a7dc8c593cae4bcb9b2f8ea3d8a6ab38922717f28a1e4e94a4ae3e879
+- kind: project-relative
+  target: claude
+  value: .claude/skills/jules/_meta.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/jules
+  active_owner: ./skills/@wei840222/jules
+  content_hash: sha256:0256f6c45c12925bd56b5b66df440a033b67748a70f1f2b4812856786242f8aa
+- kind: project-relative
+  target: claude
+  value: .claude/skills/jules/references/cli-reference.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/jules
+  active_owner: ./skills/@wei840222/jules
+  content_hash: sha256:4a7b07c2964c30f65c1e94f133a527b68aba5a22f719a870be385a1dcf38b853
+- kind: project-relative
+  target: claude
+  value: .claude/skills/jules/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/jules
+  active_owner: ./skills/@wei840222/jules
+  content_hash: sha256:2ed5ab374fbc59e03049fc161a40a5c9d8b2c3e798d3dfaa4eb9a6d15a169ffb
+- kind: project-relative
+  target: claude
+  value: .claude/skills/knative-serving
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/knative-serving/.clawhub/origin.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:59a431414b6372ebc5a9e105298cbba2546c20f7fcb7024a1083b4b97ad9f30c
+- kind: project-relative
+  target: claude
+  value: .claude/skills/knative-serving/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:89dee3f512edfea7724d19b260a4a5a80a0b1090b59f978ab78cd74bcf0b8481
+- kind: project-relative
+  target: claude
+  value: .claude/skills/knative-serving/_meta.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:d22d0bec2aa025e288f9b2eb2f0dd7e84b9d91007881d6b49482d99568351cc0
+- kind: project-relative
+  target: claude
+  value: .claude/skills/knative-serving/references/autoscaling.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:54fdaf0ebc5e098491ff3c14531f72ecbdbae9b916f8062558918afd1a05f799
+- kind: project-relative
+  target: claude
+  value: .claude/skills/knative-serving/references/common-errors.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:1b434d689fda587469fd003c065e0ab676adbc3a65269b14d22d2f642564b633
+- kind: project-relative
+  target: claude
+  value: .claude/skills/knative-serving/references/container-settings.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:813d30d72b4170f59938337290065d2903398617507e590d1ecac584c7cd9085
+- kind: project-relative
+  target: claude
+  value: .claude/skills/knative-serving/references/debugging.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:378d6935cb5258498580d12e3e5ae88a378919a0011df0a07957b03d9459de48
+- kind: project-relative
+  target: claude
+  value: .claude/skills/knative-serving/references/kn-cli.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:8c3240f6b153af46fb7fc61e99397b241f124e16f4aa2a5024fc8eeca988cf1e
+- kind: project-relative
+  target: claude
+  value: .claude/skills/knative-serving/references/networking.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:70816dd6e2db86fc007991d1b3ea8d9fdd508246097b842e11c3efa32fe12349
+- kind: project-relative
+  target: claude
+  value: .claude/skills/knative-serving/references/observability.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:16b78c96be978ddf6fbf36df3e9f50b02690e527ea237e98b2b78fe5f3581f46
+- kind: project-relative
+  target: claude
+  value: .claude/skills/knative-serving/references/overview-and-crds.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:2ae793630a933f7aed68fa0716f7df0e1f46cf204c1801a1ac0c477c85058ed0
+- kind: project-relative
+  target: claude
+  value: .claude/skills/knative-serving/references/revisions-and-traffic.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:a65edd0d7ff8a091b675199780ae90dff5053fe3ee92e54581d67755fabb6796
+- kind: project-relative
+  target: claude
+  value: .claude/skills/knative-serving/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:05033a157b58b0de496fbbba60ee98c04f08bdc84cead15cca9495f2c0af4ba8
+- kind: project-relative
+  target: claude
+  value: .claude/skills/mcporter
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/mcporter
+  active_owner: ./skills/@steipete/mcporter
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/mcporter/.clawhub/origin.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/mcporter
+  active_owner: ./skills/@steipete/mcporter
+  content_hash: sha256:f021b31e3db5f86783e92234432b3bf73513deb562fa988536caf1e71eadb229
+- kind: project-relative
+  target: claude
+  value: .claude/skills/mcporter/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/mcporter
+  active_owner: ./skills/@steipete/mcporter
+  content_hash: sha256:475253164a0cca240679819497abd35bcd708162ab0f399990468d94d55a6d15
+- kind: project-relative
+  target: claude
+  value: .claude/skills/mcporter/_meta.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/mcporter
+  active_owner: ./skills/@steipete/mcporter
+  content_hash: sha256:72acbc034c6a2727bd4309e9be79c3c41f2def8bf125e7f3477137fe67f34162
+- kind: project-relative
+  target: claude
+  value: .claude/skills/mcporter/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/mcporter
+  active_owner: ./skills/@steipete/mcporter
+  content_hash: sha256:4550653ee3f23dc054ed24da9d2c2516b6e7a69e1027c48551d4d79dde6493f5
+- kind: project-relative
+  target: claude
+  value: .claude/skills/qmd
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/qmd
+  active_owner: wei840222/qmd
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/qmd/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/qmd
+  active_owner: wei840222/qmd
+  content_hash: sha256:665e037e3119fef68a418c6e8e2ead95e5067047b58d2a36abdc35c3e704f0c4
+- kind: project-relative
+  target: claude
+  value: .claude/skills/qmd/references/mcp-setup.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/qmd
+  active_owner: wei840222/qmd
+  content_hash: sha256:43e10ec943c0226fcf72b2ef3fc079bf937309834e43c5c42e8d226ec42d82af
+- kind: project-relative
+  target: claude
+  value: .claude/skills/release
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/qmd
+  active_owner: wei840222/qmd
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/release/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/qmd
+  active_owner: wei840222/qmd
+  content_hash: sha256:59f4b99a7d3fe512324aca85f9fd704c0706da8368441821ecff5c63c53c602b
+- kind: project-relative
+  target: claude
+  value: .claude/skills/release/scripts/install-hooks.sh
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/qmd
+  active_owner: wei840222/qmd
+  content_hash: sha256:f83c116f95d7d8450ab6e6027bacf55923423377db009ceae5787459ace2103f
+- kind: project-relative
+  target: claude
+  value: .claude/skills/treemd
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/treemd
+  active_owner: wei840222/treemd
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/treemd/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/treemd
+  active_owner: wei840222/treemd
+  content_hash: sha256:a709de6bd5d35777c7e53b0bd7bf4e0e4024c17cea7d57b0a3bc445ae693962b
+- kind: project-relative
+  target: claude
+  value: .claude/skills/treemd/references/query-language.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/treemd
+  active_owner: wei840222/treemd
+  content_hash: sha256:a7b8615130bef06b5f57e7eecff6280565e357fcee2fcf6f233e212825dc4193
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ai-expert-team
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ai-expert-team/.clawhub/origin.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:787a7f152d4aa91350894b23b4243797b1d4d40737608af47d4af0ab5a8c0c83
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ai-expert-team/README.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:146ecb76155ac7aa61f872eeab2ad61535fe20ec61bf0fac2c1e5fcb6f2f7659
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ai-expert-team/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:e71df26be53edea12d095d3173619cdb0a7f86c16f78f8f2f33490e0b94701ea
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ai-expert-team/_meta.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:ac5560f1d2427f24bc3548c5bff0c02f411929aa2d6f83f258b0b6eb5b5e3ca9
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ai-expert-team/references/ceo-profiles.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:8a7696ce5721c5438879598ac12670a1e14a19a926b6e929df3328ff75424e56
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ai-expert-team/references/source-research-snapshot.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:409ec2e64ffa4df9166b5f324f030d4bb7431734a423e5ba1c1b4806fffb17bf
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ai-expert-team/references/specialist-selection.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:2ea46a8696bf3a5a9af63926591b140859b63faef477f9585d57299f84d97245
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ai-expert-team/references/validation-case-library.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:f5d76b09d7a1abb30acaeb10fc73fcb13a89b6373ccc1033ab8690eb66223d03
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ai-expert-team/references/validation-cycle-closure.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:ec85c24134275d238e61cfcaf0b83fb01e5d4575cf62cb6468b7557c27c98043
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ai-expert-team/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:fb2c58e8ad54771798b39b2446c3adfc600371a3255f98172dd68cab4ac8cadd
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ai-expert-team/templates/expert-handoff.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:4687518ced65d2059073af6bf23dda98eb121a525f4be374299dee075a76535a
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ai-expert-team/templates/final-synthesis.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:c6d8be01660fd7b95f9572a92e8d69a71ac6236e5ec40a1d83abdb1a2ad59533
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ai-expert-team/test-prompts.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/ai-expert-team
+  active_owner: ./skills/@wei840222/ai-expert-team
+  content_hash: sha256:713eba87567db78fdeb6ab6cba4f21f462f28a3933a6e5ff21c2a0a7c413abf6
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/antigravity-cli
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/antigravity-cli/.clawhub/origin.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:b40dffdb1ab1198821640dd905a901c5436e4037165d8eac8ae8747696710a47
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/antigravity-cli/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:9e388fb1162e356f19bf04167d2f0e0d28f591fad3005327a294ed5b75ce7be0
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/antigravity-cli/_meta.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:94c78d4eadbbb13cea29fc5b9fed01de587fe03d716e06063044fa15a369ab0f
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/antigravity-cli/references/artifacts.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:fcef374ba38aab33d17e054e1b55daaf3317b6e5f32df138daf648ae0c8611bf
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/antigravity-cli/references/cli-usage.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:9b130a2c078d1a19102baaaac8fbf27224cae9773bb38ddea6c1b49ea1e53c9d
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/antigravity-cli/references/config-platform.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:54e7ed3d32b774497c42d425bde964fc6a63d018d79fddebf34803339be84ce0
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/antigravity-cli/references/overview-workflows.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:5251e9fd675f25effa057b3cff4c29be5c218d75eaca3b1b7f044658bb2e61aa
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/antigravity-cli/references/security-permissions.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:9b2c87865c9de79547357970cc0240808f8f66fc289cbcf0cd3d6f5c7c3e343a
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/antigravity-cli/references/tui.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:f80469bdd76491fb15a331dd1fd2b4070e8ab4bd3eec99f9bf218acd47ee5e31
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/antigravity-cli/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/antigravity-cli
+  active_owner: ./skills/@wei840222/antigravity-cli
+  content_hash: sha256:ba48c5992ece217b0945eaf9f5a2590cde58e812a49cb4c5fd8becd74e09fae0
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/codegraph
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/codegraph
+  active_owner: ./skills/@wei840222/codegraph
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/codegraph/.clawhub/origin.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/codegraph
+  active_owner: ./skills/@wei840222/codegraph
+  content_hash: sha256:a1cc8e031e9dcec09d8eb2c6d19a8ae2372dca29959950d5be29438ec65ccdad
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/codegraph/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/codegraph
+  active_owner: ./skills/@wei840222/codegraph
+  content_hash: sha256:d61410fd39fc5889e4fd9b4815c090db9d6a93c6aa15e38a21cad2b12d2163cf
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/codegraph/_meta.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/codegraph
+  active_owner: ./skills/@wei840222/codegraph
+  content_hash: sha256:b73b7614da6507491ab3384f5d2467eec06722916d1cd056a1cf05dcaa5774e2
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/codegraph/references/cli-reference.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/codegraph
+  active_owner: ./skills/@wei840222/codegraph
+  content_hash: sha256:1fb69742330451252fe28886acfcd489ba8115bf517e215f7bf356c061e6f7a9
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/codegraph/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/codegraph
+  active_owner: ./skills/@wei840222/codegraph
+  content_hash: sha256:0417a0d155d7e453a62cdc3d045e1bc3f26aed61919c95c50febe552e14339dc
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/cx
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/cx/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: sha256:460aaa8c5d62781e28c25927313b702a10e776261c7f3baeb7b4e5f58772f53d
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/cx/references/command-reference.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: sha256:53520ac001c25142b868c371663f763e649090d847929e6509bdca95bdba32a2
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/cx/references/decision-tree.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: sha256:db7c5fd7c065ee2718bb21c05c0aea06c027fb06f98209287a3416161cfc2fd2
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/cx/references/output-examples.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: sha256:a7259291ed49caceb48a97218347ef2f7558e8d3dd6bf3f9d6f76dd50594f2ff
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/cx/references/setup-and-recovery.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: sha256:8345aedbb677430eccbe5d61ce89e0b3b1ee4f368e1634ed2dc6024d11093788
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/cx/references/usage-inventory.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/cx
+  active_owner: wei840222/cx
+  content_hash: sha256:815ecf9d78af6bcaf6ade836368c934f55a2fba394fb7f359d880d04149da946
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/emo
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/emo
+  active_owner: ./skills/@wei840222/emo
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/emo/.clawhub/origin.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/emo
+  active_owner: ./skills/@wei840222/emo
+  content_hash: sha256:08d8fdcb8ffe4e0f9a1e6de73b735dd540542df085d682792b5dc4448be1ab16
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/emo/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/emo
+  active_owner: ./skills/@wei840222/emo
+  content_hash: sha256:36def5d6d8f66e2e78c5b44f8f0f937ff7b6186dce02104a67754a74114085d7
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/emo/_meta.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/emo
+  active_owner: ./skills/@wei840222/emo
+  content_hash: sha256:5f0705dffd5fce68abdcdcca5c0d8530b23d8a4a7e86f942179bbb656f8aac49
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/emo/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/emo
+  active_owner: ./skills/@wei840222/emo
+  content_hash: sha256:c720991f0f1c34e3d8e392cd59147df24613d234467b8c8568dab337f38055d2
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/git-master
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/git-master
+  active_owner: ./skills/@wei840222/git-master
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/git-master/.clawhub/origin.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/git-master
+  active_owner: ./skills/@wei840222/git-master
+  content_hash: sha256:9794111b27392da6b45e2dea41362eaac17891d2e57b602186854ce1048b0868
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/git-master/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/git-master
+  active_owner: ./skills/@wei840222/git-master
+  content_hash: sha256:db47d02705bc1adbaa504a28116696c8d58b3ad0e2682f2b0cbcebbe77f31776
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/git-master/_meta.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/git-master
+  active_owner: ./skills/@wei840222/git-master
+  content_hash: sha256:c75b9d85bacb6aa0eeebad0514cc09bfac9c773c8cd465746ac19043dfa042c5
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/git-master/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/git-master
+  active_owner: ./skills/@wei840222/git-master
+  content_hash: sha256:7a478fabcecc3b5f0ee63e025b657bccc7b750877d89b33050bd6be8bf9262ee
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/gitea
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/gitea
+  active_owner: ./skills/@wei840222/gitea
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/gitea/.clawhub/origin.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/gitea
+  active_owner: ./skills/@wei840222/gitea
+  content_hash: sha256:d6ab686c620e9ab04b6974aa5efe82f983229029ebf1c73cce77bb3de556214c
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/gitea/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/gitea
+  active_owner: ./skills/@wei840222/gitea
+  content_hash: sha256:bb61c469ec7e2a59db13615c6626c7c2238f5152e9173799948f52e599b16a64
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/gitea/_meta.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/gitea
+  active_owner: ./skills/@wei840222/gitea
+  content_hash: sha256:4d1f938c20dcf26924c59fa3cd4da57e0fed115e4ea5d91091d8ff9b9f337efa
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/gitea/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/gitea
+  active_owner: ./skills/@wei840222/gitea
+  content_hash: sha256:850f85a972356d32a6a8eb2c3ec1c2023aba0afdea1d65eda960d73a0b1bf531
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/github
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/github
+  active_owner: ./skills/@steipete/github
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/github/.clawhub/origin.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/github
+  active_owner: ./skills/@steipete/github
+  content_hash: sha256:18cdb7f09442449abe9e04bb50b588d5950834b4308319a929c2041e8f0d286f
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/github/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/github
+  active_owner: ./skills/@steipete/github
+  content_hash: sha256:51b28818a6f0359287d5c8244a6fdc59a4ac5504596deb193b28b81832221c86
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/github/_meta.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/github
+  active_owner: ./skills/@steipete/github
+  content_hash: sha256:56fb7f167484f71475e75387a58a1efc59db8d114180d5a1d9b91881debe53c1
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/github/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/github
+  active_owner: ./skills/@steipete/github
+  content_hash: sha256:354c1678ea2226b0c5bffa50cedc51cd629354a9f3590cfb1d5013406b7f1ea8
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/jules
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/jules
+  active_owner: ./skills/@wei840222/jules
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/jules/.clawhub/origin.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/jules
+  active_owner: ./skills/@wei840222/jules
+  content_hash: sha256:ea249a21c3f2291f63a2f831410cb5b603e90f76cbb649fa7b86ae2192f0c6c9
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/jules/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/jules
+  active_owner: ./skills/@wei840222/jules
+  content_hash: sha256:b80bb43a7dc8c593cae4bcb9b2f8ea3d8a6ab38922717f28a1e4e94a4ae3e879
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/jules/_meta.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/jules
+  active_owner: ./skills/@wei840222/jules
+  content_hash: sha256:0256f6c45c12925bd56b5b66df440a033b67748a70f1f2b4812856786242f8aa
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/jules/references/cli-reference.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/jules
+  active_owner: ./skills/@wei840222/jules
+  content_hash: sha256:4a7b07c2964c30f65c1e94f133a527b68aba5a22f719a870be385a1dcf38b853
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/jules/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/jules
+  active_owner: ./skills/@wei840222/jules
+  content_hash: sha256:2ed5ab374fbc59e03049fc161a40a5c9d8b2c3e798d3dfaa4eb9a6d15a169ffb
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/knative-serving
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/knative-serving/.clawhub/origin.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:59a431414b6372ebc5a9e105298cbba2546c20f7fcb7024a1083b4b97ad9f30c
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/knative-serving/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:89dee3f512edfea7724d19b260a4a5a80a0b1090b59f978ab78cd74bcf0b8481
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/knative-serving/_meta.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:d22d0bec2aa025e288f9b2eb2f0dd7e84b9d91007881d6b49482d99568351cc0
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/knative-serving/references/autoscaling.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:54fdaf0ebc5e098491ff3c14531f72ecbdbae9b916f8062558918afd1a05f799
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/knative-serving/references/common-errors.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:1b434d689fda587469fd003c065e0ab676adbc3a65269b14d22d2f642564b633
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/knative-serving/references/container-settings.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:813d30d72b4170f59938337290065d2903398617507e590d1ecac584c7cd9085
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/knative-serving/references/debugging.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:378d6935cb5258498580d12e3e5ae88a378919a0011df0a07957b03d9459de48
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/knative-serving/references/kn-cli.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:8c3240f6b153af46fb7fc61e99397b241f124e16f4aa2a5024fc8eeca988cf1e
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/knative-serving/references/networking.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:70816dd6e2db86fc007991d1b3ea8d9fdd508246097b842e11c3efa32fe12349
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/knative-serving/references/observability.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:16b78c96be978ddf6fbf36df3e9f50b02690e527ea237e98b2b78fe5f3581f46
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/knative-serving/references/overview-and-crds.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:2ae793630a933f7aed68fa0716f7df0e1f46cf204c1801a1ac0c477c85058ed0
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/knative-serving/references/revisions-and-traffic.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:a65edd0d7ff8a091b675199780ae90dff5053fe3ee92e54581d67755fabb6796
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/knative-serving/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@wei840222/knative-serving
+  active_owner: ./skills/@wei840222/knative-serving
+  content_hash: sha256:05033a157b58b0de496fbbba60ee98c04f08bdc84cead15cca9495f2c0af4ba8
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/mcporter
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/mcporter
+  active_owner: ./skills/@steipete/mcporter
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/mcporter/.clawhub/origin.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/mcporter
+  active_owner: ./skills/@steipete/mcporter
+  content_hash: sha256:f021b31e3db5f86783e92234432b3bf73513deb562fa988536caf1e71eadb229
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/mcporter/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/mcporter
+  active_owner: ./skills/@steipete/mcporter
+  content_hash: sha256:475253164a0cca240679819497abd35bcd708162ab0f399990468d94d55a6d15
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/mcporter/_meta.json
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/mcporter
+  active_owner: ./skills/@steipete/mcporter
+  content_hash: sha256:72acbc034c6a2727bd4309e9be79c3c41f2def8bf125e7f3477137fe67f34162
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/mcporter/skill-card.md
+  runtime: null
+  scope: project
+  owners:
+  - ./skills/@steipete/mcporter
+  active_owner: ./skills/@steipete/mcporter
+  content_hash: sha256:4550653ee3f23dc054ed24da9d2c2516b6e7a69e1027c48551d4d79dde6493f5
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/qmd
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/qmd
+  active_owner: wei840222/qmd
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/qmd/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/qmd
+  active_owner: wei840222/qmd
+  content_hash: sha256:665e037e3119fef68a418c6e8e2ead95e5067047b58d2a36abdc35c3e704f0c4
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/qmd/references/mcp-setup.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/qmd
+  active_owner: wei840222/qmd
+  content_hash: sha256:43e10ec943c0226fcf72b2ef3fc079bf937309834e43c5c42e8d226ec42d82af
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/release
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/qmd
+  active_owner: wei840222/qmd
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/release/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/qmd
+  active_owner: wei840222/qmd
+  content_hash: sha256:59f4b99a7d3fe512324aca85f9fd704c0706da8368441821ecff5c63c53c602b
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/release/scripts/install-hooks.sh
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/qmd
+  active_owner: wei840222/qmd
+  content_hash: sha256:f83c116f95d7d8450ab6e6027bacf55923423377db009ceae5787459ace2103f
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/treemd
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/treemd
+  active_owner: wei840222/treemd
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/treemd/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/treemd
+  active_owner: wei840222/treemd
+  content_hash: sha256:a709de6bd5d35777c7e53b0bd7bf4e0e4024c17cea7d57b0a3bc445ae693962b
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/treemd/references/query-language.md
+  runtime: null
+  scope: project
+  owners:
+  - wei840222/treemd
+  active_owner: wei840222/treemd
+  content_hash: sha256:a7b8615130bef06b5f57e7eecff6280565e357fcee2fcf6f233e212825dc4193

@@ -15,10 +15,25 @@ targets:
 
 dependencies:
   apm:
+    # GitHub
     - wei840222/cx#local
     - wei840222/treemd#local
-    - wei840222/emo#local
-    - wei840222/qmd#main
+    - wei840222/qmd#local
+
+    # ClawHub @wei840222
+    - ./skills/@wei840222/ai-expert-team
+    - ./skills/@wei840222/antigravity-cli
+    - ./skills/@wei840222/anydoc
+    - ./skills/@wei840222/codegraph
+    - ./skills/@wei840222/git-master
+    - ./skills/@wei840222/gitea
+    - ./skills/@wei840222/jules
+    - ./skills/@wei840222/knative-serving
+    - ./skills/@wei840222/emo
+
+    # ClawHub @steipete
+    - ./skills/@steipete/github
+    - ./skills/@steipete/mcporter
   mcp: []
 
 includes: auto
