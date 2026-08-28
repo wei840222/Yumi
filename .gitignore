@@ -1,0 +1,10 @@
+*
+!.gitignore
+!agent/
+!agent/config.yml
+!agent/models.yml
+!agent/AGENTS.md
+
+!agent/skills/
+!agent/skills/yumi-persona/
+!agent/skills/yumi-persona/**
