@@ -1,0 +1,27 @@
+# Personal values for rendering the prompts and agents.
+#
+# Copy this file to local.yaml (gitignored) and fill in your own values. When
+# local.yaml is missing, the build falls back to this file, so a fresh clone
+# still renders a complete, generic prompt.
+
+features:
+  # Reference the bifrost MCP server (mcp__bifrost__* tools) in prompts and agent tool lists.
+  bifrost: false
+  # Include the Gitea / tea rules and the Gitea standing-authorization lines.
+  gitea: false
+
+gitea:
+  host: git.example.com
+  user: your-user            # your personal account on the instance
+  org: your-org              # an organization you may push feature branches to
+  login: your-user@example   # tea login to pass with --login
+  # tea login used when --login is omitted, if it is not yours. Leave both empty if not applicable.
+  default_login: ""
+  default_login_owner: ""
+
+hindsight:
+  url: https://hindsight.example.com/
+  bank: yumi
+
+bifrost:
+  url: https://bifrost.example.com/mcp   # only used when features.bifrost is true

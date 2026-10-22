@@ -1,0 +1,24 @@
+[submodule "upstream/mattpocock-skills"]
+	path = upstream/mattpocock-skills
+	url = https://github.com/mattpocock/skills.git
+	branch = main
+[submodule "upstream/i-have-adhd"]
+	path = upstream/i-have-adhd
+	url = https://github.com/ayghri/i-have-adhd.git
+	branch = main
+[submodule "upstream/kubernetes-skill"]
+	path = upstream/kubernetes-skill
+	url = https://github.com/LukasNiessen/kubernetes-skill.git
+	branch = main
+[submodule "upstream/ponytail"]
+	path = upstream/ponytail
+	url = https://github.com/DietrichGebert/ponytail.git
+	branch = main
+[submodule "upstream/speak-human-tw"]
+	path = upstream/speak-human-tw
+	url = https://github.com/Raymondhou0917/speak-human-tw.git
+	branch = master
+[submodule "upstream/obsidian-skills"]
+	path = upstream/obsidian-skills
+	url = https://github.com/kepano/obsidian-skills.git
+	branch = main

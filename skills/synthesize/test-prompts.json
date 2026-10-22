@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "scenario": "Happy path",
+    "prompt": "Synthesize these three sources on space exploration trends. Source 1: NASA is focusing on Mars in 2030. Source 2: SpaceX plans Mars missions by 2028. Source 3: ESA is prioritizing lunar missions before Mars.",
+    "expected": "Extracts claims from all sources, explicitly flags the timeline conflict (2028 vs 2030), highlights consensus on Mars, and points out ESA's unique lunar approach.",
+    "actual": "📚 SOURCES: 3 (agency statements and company plan)\n🎯 SYNTHESIS: Mars is a shared strategic destination, but the stated timelines differ: SpaceX plans Mars missions by 2028 while NASA focuses on Mars in 2030. ESA's stated sequence is lunar missions before Mars.\n⚡ KEY INSIGHTS: [1] NASA names 2030; [2] SpaceX names 2028; [3] ESA prioritizes the Moon first.\n⚠️ TENSIONS: The 2028 and 2030 claims conflict on timing; retain both because the supplied statements do not establish comparable milestones.\n🕳️ GAPS: No evidence explains feasibility, funding, or whether the timeline labels mean the same mission milestone.",
+    "pass": true,
+    "bm25_prompt": "synthesize summarize reconcile compare documents sources"
+  },
+  {
+    "id": 2,
+    "scenario": "Complex conflict",
+    "prompt": "Summarize user feedback from two reports. Report A (2020, sample 50): 80% prefer dark mode. Report B (2024, sample 5000): 60% prefer light mode. Reconcile this.",
+    "expected": "Builds an overlap matrix, applies CRAAP factors to the available source details, uses the Conflict Resolution hierarchy for sample size, explicitly notes the 2020 vs 2024 conflict, and outputs a formatted TENSIONS block.",
+    "actual": "📚 SOURCES: 2 (user-feedback reports)\n🎯 SYNTHESIS: The reports conflict: Report A found 80% dark-mode preference in 2020 (n=50), while Report B found 60% light-mode preference in 2024 (n=5000).\n⚡ KEY INSIGHTS: CRAAP Currency favors Report B; its larger sample is evaluated through the Conflict Resolution methodology, not CRAAP itself. Authority, collection method, and audience relevance are unknown for both reports.\n⚠️ TENSIONS: Preserve both findings. Treat Report B as stronger but provisional evidence because it is newer and larger; obtain methodology and population details before inferring a product-wide preference.\n🕳️ GAPS: Neither report identifies sampling method, user segment, question wording, or confidence interval.",
+    "pass": true,
+    "bm25_prompt": "synthesize reconcile summarize feedback compare reports"
+  }
+]

@@ -1,0 +1,21 @@
+# Codex settings template. Nothing installs this file: copy what you need into
+# ~/.codex/config.toml. `make handoff P=codex` compares it with your live config.
+# It carries no keys, trust entries, or machine paths.
+
+model_reasoning_effort = "high"
+
+[features]
+hooks = true
+
+[marketplaces.agent-skills]
+source_type = "git"
+source = "https://github.com/addyosmani/agent-skills.git"
+
+[plugins."agent-skills@agent-skills"]
+enabled = true
+
+# Hindsight memory (optional). Replace the path with your Hindsight install.
+# [mcp_servers.hindsight]
+# command = "node"
+# args = ["<path-to>/.hindsight/coding-agents/dist/mcp-server.js"]
+# env = { HINDSIGHT_MCP_HARNESS = "codex" }

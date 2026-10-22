@@ -1,0 +1,1 @@
+1. Select the mode, then load every selected skill with the `Skill` tool and read it fully before applying it.

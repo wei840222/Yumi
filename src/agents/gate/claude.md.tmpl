@@ -1,0 +1,9 @@
+---
+name: {{ .meta.name }}
+description: {{ .meta.description }}
+tools: {{ .meta.tools }}{{ if .local.features.bifrost }}, {{ .meta.tools_bifrost }}{{ end }}
+disallowedTools: {{ .meta.disallowed_tools }}
+omitClaudeMd: true
+maxTurns: {{ .meta.max_turns }}
+---
+{{ tmpl.Exec "body" . }}

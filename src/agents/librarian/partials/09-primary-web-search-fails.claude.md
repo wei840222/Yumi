@@ -1,0 +1,1 @@
+| Primary web search fails (quota, authentication) | `WebSearch`, or first-party pages through `WebFetch` | Primary-provider failure and fallback quality limits |

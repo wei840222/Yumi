@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "scenario": "happy-path",
+    "prompt": "Evaluate whether we should add a freemium tier to our SaaS product. Give me perspectives from Sales, Product, and Finance.",
+    "expected": "Spawns three distinct personas (Sales, Product, Finance), analyzes the problem from each viewpoint, identifies conflicts, and synthesizes a final recommendation.",
+    "actual": "Sales: A freemium tier can widen acquisition, but cap usage so conversion economics remain measurable.\nProduct: A free tier should demonstrate the core workflow without fragmenting the product or creating a confusing downgrade path.\nFinance: Model support, infrastructure, and cannibalization costs before setting the free allowance.\nSynthesis: Run a time-boxed freemium experiment with one clear conversion metric, a support-cost guardrail, and a defined stop condition.\nTensions: Sales favors reach while Finance requires cost control; a capped, measured trial addresses both.",
+    "pass": true,
+    "bm25_prompt": "freemium product strategy multi-perspective evaluation trade-off analysis"
+  },
+  {
+    "id": 2,
+    "scenario": "complex",
+    "prompt": "Review this proposed API change that deprecates an older authentication endpoint. It's security critical but might break legacy clients.",
+    "expected": "Identifies multiple perspectives (Security Engineer, Legacy Client Owner, Product Manager), evaluates the trade-offs, and provides a safe synthesis.",
+    "actual": "Security Reviewer: Retire the legacy endpoint only after the replacement has equivalent controls, auditability, and a published migration path.\nLegacy Client Owner: Existing integrations need a compatibility window, clear error behavior, and migration examples before a cutoff.\nProduct Manager: Communicate a dated deprecation policy and measure remaining legacy traffic to target support.\nSynthesis: Ship the replacement first, publish migration guidance, warn on legacy use, and retire the endpoint after the announced window and low residual traffic.\nTensions: Security favors rapid retirement while compatibility needs a transition; staged deprecation keeps the security goal while reducing client breakage.",
+    "pass": true,
+    "bm25_prompt": "api deprecation security impact trade-off analysis"
+  }
+]

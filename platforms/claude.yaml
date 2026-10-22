@@ -1,0 +1,4 @@
+id: claude
+name: Claude Code
+prompt_file: CLAUDE.md
+agent_ext: md

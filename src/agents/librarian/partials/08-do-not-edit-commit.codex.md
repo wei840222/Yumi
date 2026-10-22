@@ -1,0 +1,1 @@
+Do not edit, commit, push, or open issues or pull requests. With no scratch directory, do not clone: return the repository and commit to inspect under **Unresolved** so the caller can dispatch `explorer` on a pinned clone. If the requested depth exceeds available evidence or tools, report the exact gap.

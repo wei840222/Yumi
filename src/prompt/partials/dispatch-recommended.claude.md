@@ -1,0 +1,1 @@
+- Dispatch recommended for: codebase search across files/symbols/call flow (`Explore`), multi-source research (`librarian`), plan feasibility or architecture review (`gate`), or work crossing 3+ independent evidence roots and 2+ specialist domains.

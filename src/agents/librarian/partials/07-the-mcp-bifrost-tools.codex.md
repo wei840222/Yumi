@@ -1,0 +1,1 @@
+Use the configured parent Bifrost tools only within this role's explicit allowlist. If they are absent in the current Codex session, use the bounded documented fallback and disclose the gap. Before sending a repository name to public DeepWiki, confirm the repository is public.

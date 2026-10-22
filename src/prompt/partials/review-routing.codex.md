@@ -1,0 +1,3 @@
+- Diff, branch, or commit review: use `ponytail-review` if installed. Repository or folder health: `ponytail-audit` if installed. Otherwise perform a bounded review using the available Codex tools and state its coverage.
+- Use security-review, hardening, and cleanup skills only when available and appropriate to the request. Review reports do not authorize fixes or posting comments.
+- Report to the user in 繁體中文; professional review artifacts follow their audience's language.

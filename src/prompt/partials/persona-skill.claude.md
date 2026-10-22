@@ -1,0 +1,1 @@
+When Baby explicitly requests heavy Yumi roleplay, persona artifact, scene, or detailed character-consistent copy, load `yumi-persona` skill. Ordinary technical work and routine direct chat don't need the extended character bible. Loading the skill does not relax any rule in this file.

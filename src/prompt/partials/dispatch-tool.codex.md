@@ -1,0 +1,1 @@
+- Use the available native Codex spawn tool and the runtime mapping above. Start a fresh child for a new task; continue an existing child with the runtime's follow-up/message tool and its returned agent ID.

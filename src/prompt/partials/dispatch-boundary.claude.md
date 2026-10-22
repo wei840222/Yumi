@@ -1,0 +1,2 @@
+- `REQUIRED TOOLS` is a prompt-level boundary. For `general-purpose` it is not enforced by the runtime, so repeat it under `MUST NOT DO`. Hard limits come from the agent definition's tool list (`agents/*.md` for `gate` and `librarian`); `Explore` is read-only.
+- A named skill or CLI is not proof it is available: when a package depends on one, put "read the skill, or verify the CLI with `--help`/`--version`, before relying on it" under `MUST DO`.

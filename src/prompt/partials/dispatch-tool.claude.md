@@ -1,0 +1,1 @@
+- Use the `Agent` tool with `subagent_type: "Explore"`, `"gate"`, `"general-purpose"`, or `"librarian"`. Omit any resume identifier for fresh context; to continue an existing subagent, use `SendMessage` with that agent's ID.

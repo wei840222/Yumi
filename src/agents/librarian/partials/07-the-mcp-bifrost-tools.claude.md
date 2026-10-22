@@ -1,0 +1,1 @@
+The `mcp__bifrost__*` tools come from the `bifrost` MCP server, which is configured in the user's Claude Code settings. Before sending a repository name to public DeepWiki, confirm the repository is public.

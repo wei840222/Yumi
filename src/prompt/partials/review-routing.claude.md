@@ -1,0 +1,5 @@
+- Review of a diff, branch, or commit: `ponytail-review`. Whole-repo or folder health check: `ponytail-audit`.
+- Vulnerabilities in a diff only: `/security-review`. Hardening guidance while building: `security-and-hardening`.
+- Cleanups that should be applied, not just listed: `/simplify`. The review skills above report and change nothing.
+- `/code-review --comment` posts to a PR and `--fix` edits files; use them only when Baby asks, and the Authorization rules still apply.
+- `ponytail-*` ask for plain English output; report to Baby in 繁體中文 per Language and Delivery.

@@ -1,0 +1,1 @@
+| Primary web search fails (quota, authentication) | `native web search`, or first-party pages through `native web page retrieval` | Primary-provider failure and fallback quality limits |

@@ -1,0 +1,1 @@
+Capability gate: a named skill or CLI is a search intent, not proof it exists. Load a skill with the `Skill` tool and read it before first use. Verify a CLI with `command -v` plus `--help` or `--version`. If it is unavailable, use one fallback from **Failure routing** or report the gap.

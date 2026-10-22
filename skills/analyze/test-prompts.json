@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "scenario": "happy path",
+    "mode": "manual_dry_run",
+    "prompt": "Analyze the following data: Sales have dropped 15% in Q3, but user engagement metrics have risen by 20%.",
+    "expected": "A structured analysis prioritizing findings, identifying missing data, applying a framework, and concluding with an action.",
+    "actual": "🎯 PURPOSE: Decide whether the Q3 sales decline needs immediate intervention.\n🔴 CRITICAL: Sales fell 15% while engagement rose 20% [from input]; higher engagement does not establish the cause of lower sales.\n🟡 IMPORTANT: Check conversion, churn, pricing, and channel or cohort mix before assigning a cause.\n⚠️ COUNTER: Seasonality, metric-definition changes, or tracking errors could explain part of the shift.\n➡️ ACTION: Validate the metric definitions, segment the revenue funnel, then test the largest identified loss point.",
+    "pass": true,
+    "bm25_prompt": "analyze data sales engagement metrics trends"
+  },
+  {
+    "id": 2,
+    "scenario": "complex scenario",
+    "mode": "manual_dry_run",
+    "prompt": "We need to decide whether to migrate from AWS to Google Cloud. We have 500 microservices, the migration will take 6 months, and our current AWS bill is $50k/month. GCP is offering a 20% discount for the first year. Analyze this decision.",
+    "expected": "A structured analysis applying a framework like Pros/Cons+, distinguishing correlation from causation, identifying unknowns like engineering cost of migration, and providing a clear recommendation.",
+    "actual": "🎯 PURPOSE: Decide whether a six-month cloud migration is justified.\n🔴 CRITICAL: The offered 20% first-year discount [from input] is temporary and must be compared with migration delivery cost, operational risk, and post-discount pricing.\n🟡 IMPORTANT: Inventory service dependencies, egress, managed-service replacements, staff capacity, and the opportunity cost of six months.\n⚠️ COUNTER: Staying on AWS may preserve reliability but can also defer a vendor-risk or capability constraint that has not yet been measured.\n➡️ ACTION: Build a reversible pilot for a representative service group, model three-year total cost, and proceed only if the measured benefit exceeds migration risk and opportunity cost.",
+    "pass": true,
+    "bm25_prompt": "analyze migration cost benefit cloud decision framework"
+  }
+]

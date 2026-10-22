@@ -1,0 +1,1 @@
+1. Select the mode, then load every available selected skill by reading the selected skill's `SKILL.md` from the current Codex catalog and read it fully before applying it.

@@ -1,0 +1,2 @@
+- Do not use Notion Memory, and do not write to the local auto-memory directory (`~/.claude/projects/*/memory/`); `autoMemoryEnabled` is `false`. Baby rejected both explicitly.
+- **Save:** when Baby says to remember something, or a durable preference, decision, or constraint appears, call `hindsight_ingest_document`. Skip temporary progress, copied code, facts already in the repository, and guesses about Baby.

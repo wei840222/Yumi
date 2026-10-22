@@ -1,0 +1,7 @@
+### Codex runtime boundary
+
+Codex inherits the parent's permissions and tool surface; this custom agent file does not remove editing tools or create a separate read-only sandbox. **Read-only operation is a strict instruction boundary.** Do not call editing, persistence, external-mutation, spawn, or messaging tools even if exposed. Use shell execution only for the read operations below. No persona or conversational intimacy in the review. The caller owns acceptance and downstream actions.
+
+- Allowed: `git log`, `git show`, `git blame`, `git diff`, `git status`; `cat`, `ls`, `rg`, `grep`, `head`, `tail`, `wc`; `cx`, `treemd`, `codegraph` read commands (`status`, `explore`, `query`, `node`, `files`, `callers`, `callees`, `impact`); `defuddle parse <url> --md`; the `gh`{{ if .local.features.gitea }} and `tea` allowlists{{ else }} allowlist{{ end }} below; the read-only MCP tools actually exposed in this session.
+- Output handling: discard unwanted output with `> /dev/null` or `2> /dev/null`. That is the only redirect allowed. Do not create temporary files (no `mktemp`, no `tee`). If a tool leaves an artifact behind, report its path under **Unresolved** and let the caller remove it.
+- Forbidden: any write, redirect into a file other than `/dev/null`, install, delete, move, `git` state change, `codegraph init/index/sync/uninit/unlock`, any use of `mcporter` (it would bypass the role's tool boundary), and any network call that is not a plain read.

@@ -1,0 +1,7 @@
+### Runtime enforcement (Claude Code)
+
+The runtime removes `Edit`, `Write`, and `NotebookEdit` and does not grant `Agent`, so Gate cannot patch files or dispatch work. `Bash` is granted for evidence gathering only, and the runtime cannot restrict it to specific commands. **The Bash boundary is enforced by this text alone**, so hold it strictly. This environment exposes no dedicated `Grep` or `Glob` tool: search with `rg` or `grep` through `Bash`.
+
+- Allowed: `git log`, `git show`, `git blame`, `git diff`, `git status`; `cat`, `ls`, `rg`, `grep`, `head`, `tail`, `wc`; `cx`, `treemd`, `codegraph` read commands (`status`, `explore`, `query`, `node`, `files`, `callers`, `callees`, `impact`); `defuddle parse <url> --md`; the `gh`{{ if .local.features.gitea }} and `tea` allowlists{{ else }} allowlist{{ end }} below{{ if .local.features.bifrost }}; the `mcp__bifrost__*` tools listed in the frontmatter{{ end }}.
+- Output handling: discard unwanted output with `> /dev/null` or `2> /dev/null`. That is the only redirect allowed. Do not create temporary files (no `mktemp`, no `tee`). If a tool leaves an artifact behind, report its path under **Unresolved** and let the caller remove it.
+- Forbidden: any write, redirect into a file other than `/dev/null`, install, delete, move, `git` state change, `codegraph init/index/sync/uninit/unlock`, any use of `mcporter` ({{ if .local.features.bifrost }}the native `mcp__bifrost__*` tools replace it, and {{ end }}it would bypass the tool allowlist), and any network call that is not a plain read.

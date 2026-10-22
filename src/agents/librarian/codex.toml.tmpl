@@ -1,0 +1,5 @@
+# Codex custom agent; adapted from ~/.claude/agents/{{ .meta.name }}.md
+name = "{{ .meta.name }}"
+description = {{ .meta.description }}
+developer_instructions = '''
+{{ tmpl.Exec "body" . }}'''

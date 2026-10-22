@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "prompt": "We need to plan a data migration for our customer records. This will take a few days.",
+    "expected": "Uses L3/L4 planning depth since it is an irreversible migration over multiple days, requests the risk assumptions, and structures the rollback steps.",
+    "actual": "Proposed an L4 plan. Identified the riskiest assumption as data loss during cutover. Set up a multi-milestone structure with rollback verified at milestone 2. Awaiting human approval for step 1.",
+    "pass": true
+  },
+  {
+    "id": 2,
+    "prompt": "Create a quick plan to update the logo image on the website.",
+    "expected": "Uses L1 or L2 plan, noting it is a reversible <30 minute task. Will write a short bulleted list.",
+    "actual": "Classified as an L1 task because it is reversible and quick. Immediately executed the update to the logo image with a fallback rollback if necessary.",
+    "pass": true
+  }
+]

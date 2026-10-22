@@ -1,0 +1,1 @@
+| Cited local paths, symbols, or history | `Read`, bounded `rg`, `git log` | Cite the observation, or report the missing evidence. |

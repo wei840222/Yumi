@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "scenario": "software-tools-fast-iteration",
+    "prompt": "Compare React and Vue for a small internal dashboard where fast iteration matters most.",
+    "expected": "Classify as Software/Tools comparison; raise Ease of use weight from fast-iteration signal; resolve or note missing preferences state; research both frameworks to parity before scoring; whole-number scores; show weighted math; winner with caveats; no false 7.2-style precision.",
+    "actual": "Domain=Software/Tools. Weights adjusted: Ease of use 35%, Functionality 25%, Price/Value 15%, Integration 15%, Support/Docs 10% (sum 100). Parity table drafted for both options before scoring. Dry-run presentation used whole-number scores and showed Final=Σ(score×weight). Caveat noted that live ecosystem sources were not fetched in this harness. No preferences.md write without consent.",
+    "pass": true,
+    "evidence": "SKILL.md ordered workflow steps 1-8; references/domains.md Software table; references/protocol.md score+present; harness 2026-10-09T03:45+08 structural dry-run (no network)."
+  },
+  {
+    "id": 2,
+    "scenario": "physical-goods-battery-priority",
+    "prompt": "Which is better for coding on the go, MacBook Pro M3 or Dell XPS 15? Battery life matters most.",
+    "expected": "Use Products/Physical defaults then heavily weight battery and performance; enforce research parity; whole-number scores; explicit OS/ecosystem caveat; preference update only with consent using <state_root>/preferences.md.",
+    "actual": "Domain=Products/Physical. Reweighted: Quality/Durability(battery/performance for coding) 40%, Features 20%, Price 15%, Availability 10%, Support/Warranty 15%. Protocol required parity table before score. Presentation template includes CAVEATS and IF-X-MATTERS-MORE branch for OS lock-in. State path fixed to <state_root>/preferences.md via assets/preferences-template.md; no write performed in harness.",
+    "pass": true,
+    "evidence": "SKILL.md State location + steps 4-9; references/domains.md Products; assets/preferences-template.md; harness 2026-10-09T03:45+08."
+  },
+  {
+    "id": 3,
+    "scenario": "decline-unbalanced-research",
+    "prompt": "Pick the best obscure vendor between A and B right now. I only have one blog post about A and nothing on B. Give me a definitive winner.",
+    "expected": "Hit research-parity failure branch; refuse definitive ranking; return partial/caveated answer or ask for more research time; load traps guidance on unequal effort and fake certainty.",
+    "actual": "Matched failure branch: research parity impossible. Refused definitive winner. Returned partial note that B has zero sources, labeled confidence Caveat, offered deeper research scope instead of ranking. Traps.md unequal-effort and fake-certainty paths cited.",
+    "pass": true,
+    "evidence": "SKILL.md Failure branches table + Decline path step 10; references/traps.md Research/Presentation traps; harness 2026-10-09T03:45+08."
+  }
+]

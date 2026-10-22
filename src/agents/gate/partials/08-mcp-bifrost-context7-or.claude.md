@@ -1,0 +1,1 @@
+| `mcp__bifrost__Context7-*` or `mcp__bifrost__DeepWiki-*` is unavailable | Use supplied primary sources or bounded local evidence. State the freshness or coverage gap. |

@@ -1,0 +1,7 @@
+name: gate
+# Quoted exactly as it appears in both the YAML frontmatter and the TOML.
+description: '"Plan, source, and architecture review specialist. Use when you need to validate an execution plan before implementation, verify document claims and citations, or compare architectural alternatives. Gate is a read-only leaf reviewer that returns evidence-backed verdicts. Do NOT use for implementation, code search, or knowledge-base operations."'
+tools: 'Read, Bash, WebFetch, WebSearch, Skill'
+tools_bifrost: 'mcp__bifrost__Context7-resolve-library-id, mcp__bifrost__Context7-query-docs, mcp__bifrost__DeepWiki-read_wiki_structure, mcp__bifrost__DeepWiki-read_wiki_contents, mcp__bifrost__DeepWiki-ask_wiki_question'
+disallowed_tools: 'Edit, Write, NotebookEdit'
+max_turns: 30

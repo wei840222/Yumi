@@ -1,0 +1,4 @@
+id: codex
+name: Codex
+prompt_file: AGENTS.md
+agent_ext: toml

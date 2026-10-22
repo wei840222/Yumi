@@ -1,10 +1,32 @@
 *
 !.gitignore
-!agent/
-!agent/config.yml
-!agent/models.yml
-!agent/AGENTS.md
+!.gitmodules
+!README.md
+!Makefile
+!skills.yaml
+!local.example.yaml
 
-!agent/skills/
-!agent/skills/yumi-persona/
-!agent/skills/yumi-persona/**
+!skills/
+!skills/**
+
+!src/
+!src/**
+!scripts/
+!scripts/**
+!platforms/
+!platforms/**
+!templates/
+!templates/**
+
+# Upstream skills are submodules; track the gitlink, never the contents.
+!upstream/
+!upstream/*
+
+# claude.ai-synced skills are machine-local
+skills/synced/
+
+# Machine-local values, build output, and local design and planning notes stay out of version control.
+local.yaml
+dist/
+docs/
+tasks/

@@ -1,0 +1,63 @@
+# Skill manifest: where every skill comes from and where it is installed.
+#
+#   source.local      a directory in this repo (relative to the repo root)
+#   source.submodule  a git submodule under upstream/, with `path` inside it
+#   source.external   installed by something else (never touched by install)
+#   platforms         claude, codex (default: both)
+#
+# install.sh links each entry into <home>/skills/<name>. Entries it does not
+# list are never read, replaced, or removed.
+skills:
+  - name: analyze
+    source: { local: skills/analyze }
+  - name: anydoc
+    source: { local: skills/anydoc }
+  - name: clawhub
+    source: { local: skills/clawhub }
+  - name: codegraph
+    source: { local: skills/codegraph }
+  - name: compare
+    source: { local: skills/compare }
+  - name: cx
+    source: { local: skills/cx }
+  - name: defuddle
+    source: { submodule: upstream/obsidian-skills, path: skills/defuddle }
+    # Pinned to the upstream tip at adoption (2026-10-22); the previous local copy was identical.
+    install: { codex: copy }   # nested in an upstream plugin: a link would rename it in Codex
+  - name: diverge
+    source: { local: skills/diverge }
+  - name: gitea
+    source: { local: skills/gitea }
+  - name: handoff
+    source: { submodule: upstream/mattpocock-skills, path: skills/productivity/handoff }
+    # The Codex copy in ~/.codex/skills carries Codex-specific wording and is left unmanaged until skills can have per-platform variants.
+    platforms: [claude]
+  - name: hindsight-coding-agent
+    source: { external: "written into both homes by the Hindsight installer" }
+  - name: i-have-adhd
+    source: { submodule: upstream/i-have-adhd, path: skills/i-have-adhd }
+    install: { codex: copy }   # nested in an upstream plugin: a link would rename it in Codex
+  - name: in-depth-research
+    source: { local: skills/in-depth-research }
+  - name: kubernetes-skill
+    source: { submodule: upstream/kubernetes-skill, path: . }
+  - name: plan
+    source: { local: skills/plan }
+  - name: ponytail-audit
+    source: { submodule: upstream/ponytail, path: skills/ponytail-audit }
+    install: { codex: copy }   # nested in an upstream plugin: a link would rename it in Codex
+  - name: ponytail-review
+    source: { submodule: upstream/ponytail, path: skills/ponytail-review }
+    install: { codex: copy }   # nested in an upstream plugin: a link would rename it in Codex
+  - name: qmd
+    source: { local: skills/qmd }
+    # The Codex copy in ~/.codex/skills carries Codex-specific wording and is left unmanaged until skills can have per-platform variants.
+    platforms: [claude]
+  - name: speak-human-tw
+    source: { submodule: upstream/speak-human-tw, path: . }
+  - name: synthesize
+    source: { local: skills/synthesize }
+  - name: treemd
+    source: { local: skills/treemd }
+  - name: yumi-persona
+    source: { local: skills/yumi-persona }

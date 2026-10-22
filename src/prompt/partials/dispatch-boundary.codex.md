@@ -1,0 +1,2 @@
+- `REQUIRED TOOLS` is a prompt-level boundary. For `default` it is not enforced by the runtime, so repeat it under `MUST NOT DO`. Hard limits come from the actual runtime sandbox and tool configuration; the migrated TOML instructions do not provide Claude-style per-tool enforcement. Apply the same explicit read-only boundary to an exploration child.
+- A named skill or CLI is not proof it is available: when a package depends on one, put "read the skill file, or verify the CLI with `--help`/`--version`, before relying on it" under `MUST DO`.

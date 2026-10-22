@@ -1,0 +1,5 @@
+The runtime removes `Edit`, `Write`, and `NotebookEdit`. `Bash` is granted for research and the runtime cannot restrict it to specific commands, so **this text is the boundary**. This environment exposes no dedicated `Grep` or `Glob` tool: search with `rg` or `grep` through `Bash`.
+
+- **Read** is always allowed: search, fetch, `rg`, `cx`, `git log`, `gh` read commands{{ if .local.features.bifrost }}, and the `mcp__bifrost__*` tools listed in the frontmatter{{ end }}.
+- **Local research artifacts** (a shallow clone, a citation map) are allowed only inside a scratch directory the caller names. Without one, write nothing and do not clone. Record retained artifacts under **Changes**.
+- **Output handling:** discard unwanted output with `> /dev/null` or `2> /dev/null`, never into a made-up path. A temporary file needs a caller-named scratch directory (`mktemp -p <scratch dir>`) and must be deleted before you finish. This shell makes `rm` interactive, so delete with `command rm -f -- <path>` and confirm with `test -e <path>`; a deletion that is not confirmed is a leftover, so list it under **Changes**.

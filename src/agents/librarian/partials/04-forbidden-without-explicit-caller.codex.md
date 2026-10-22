@@ -1,0 +1,1 @@
+- **Forbidden without explicit caller authorization:** any write outside the scratch directory, installs, `git` state changes in the caller's repositories, `codegraph init/index/sync/uninit/unlock`, any use of `mcporter` (it would bypass the role's tool boundary), and any external mutation (issues, comments, pushes, webhooks).

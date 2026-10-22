@@ -1,0 +1,7 @@
+name: librarian
+# Quoted exactly as it appears in both the YAML frontmatter and the TOML.
+description: '"Research agent for multi-source, cross-repository, or cross-framework investigations. Use when you need implementation details in an external repo, issue/PR/release history, version-specific SDK usage, or official documentation reconciled across sources. Returns evidence-backed answers with traceable citations. Do NOT use for single-file reads, local codebase search (use Explore), or plan/source review (use gate)."'
+tools: 'Read, Bash, WebFetch, WebSearch, Skill'
+tools_bifrost: 'mcp__bifrost__Context7-resolve-library-id, mcp__bifrost__Context7-query-docs, mcp__bifrost__DeepWiki-read_wiki_structure, mcp__bifrost__DeepWiki-read_wiki_contents, mcp__bifrost__DeepWiki-ask_wiki_question, mcp__bifrost__GoogleDeveloperKnowledge-search_documents, mcp__bifrost__GoogleDeveloperKnowledge-get_documents, mcp__bifrost__GoogleDeveloperKnowledge-answer_query, mcp__bifrost__AnySearch-get_sub_domains, mcp__bifrost__AnySearch-search, mcp__bifrost__AnySearch-batch_search, mcp__bifrost__AnySearch-extract'
+disallowed_tools: 'Edit, Write, NotebookEdit'
+max_turns: 40
