@@ -22,3 +22,39 @@
 	path = upstream/obsidian-skills
 	url = https://github.com/kepano/obsidian-skills.git
 	branch = main
+[submodule "upstream/book-to-skill"]
+	path = upstream/book-to-skill
+	url = https://github.com/virgiliojr94/book-to-skill
+	branch = master
+[submodule "upstream/architecture-diagram-generator"]
+	path = upstream/architecture-diagram-generator
+	url = https://github.com/Cocoon-AI/architecture-diagram-generator.git
+	branch = main
+[submodule "upstream/buddhist-method"]
+	path = upstream/buddhist-method
+	url = https://github.com/nai0om/buddhist-method
+	branch = main
+[submodule "upstream/darwin-skill"]
+	path = upstream/darwin-skill
+	url = https://github.com/alchaincyf/darwin-skill
+	branch = master
+[submodule "upstream/freud-skill"]
+	path = upstream/freud-skill
+	url = https://github.com/alchaincyf/freud-skill.git
+	branch = master
+[submodule "upstream/go-modern-guidelines"]
+	path = upstream/go-modern-guidelines
+	url = https://github.com/JetBrains/go-modern-guidelines
+	branch = main
+[submodule "upstream/huashu-design"]
+	path = upstream/huashu-design
+	url = https://github.com/alchaincyf/huashu-design.git
+	branch = master
+[submodule "upstream/nopua"]
+	path = upstream/nopua
+	url = https://github.com/wuji-labs/nopua.git
+	branch = main
+[submodule "upstream/prompt-engineering-expert"]
+	path = upstream/prompt-engineering-expert
+	url = https://github.com/TomsTools11/prompt-engineering-expert.git
+	branch = main

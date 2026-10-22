@@ -12,6 +12,12 @@ skills:
     source: { local: skills/analyze }
   - name: anydoc
     source: { local: skills/anydoc }
+  - name: architecture-diagram
+    source: { submodule: upstream/architecture-diagram-generator, path: architecture-diagram }
+  - name: book-to-skill
+    source: { submodule: upstream/book-to-skill, path: . }
+  - name: buddhist-method
+    source: { submodule: upstream/buddhist-method, path: . }
   - name: clawhub
     source: { local: skills/clawhub }
   - name: codegraph
@@ -20,12 +26,16 @@ skills:
     source: { local: skills/compare }
   - name: cx
     source: { local: skills/cx }
+  - name: darwin-skill
+    source: { submodule: upstream/darwin-skill, path: . }
   - name: defuddle
     source: { submodule: upstream/obsidian-skills, path: skills/defuddle }
     # Pinned to the upstream tip at adoption (2026-10-22); the previous local copy was identical.
     install: { codex: copy }   # nested in an upstream plugin: a link would rename it in Codex
   - name: diverge
     source: { local: skills/diverge }
+  - name: freud-skill
+    source: { submodule: upstream/freud-skill, path: . }
   - name: gitea
     source: { local: skills/gitea }
   - name: handoff
@@ -34,6 +44,9 @@ skills:
     platforms: [claude]
   - name: hindsight-coding-agent
     source: { external: "written into both homes by the Hindsight installer" }
+  - name: huashu-design
+    source: { submodule: upstream/huashu-design, path: . }
+    # Pinned to v3.0.0, one release newer than the commit recorded in skills-anthology.
   - name: i-have-adhd
     source: { submodule: upstream/i-have-adhd, path: skills/i-have-adhd }
     install: { codex: copy }   # nested in an upstream plugin: a link would rename it in Codex
@@ -41,6 +54,10 @@ skills:
     source: { local: skills/in-depth-research }
   - name: kubernetes-skill
     source: { submodule: upstream/kubernetes-skill, path: . }
+  - name: nopua
+    source: { submodule: upstream/nopua, path: skills/nopua }
+    # The upstream also ships nopua-lite, nopua-zh, and a Codex copy that is only an older version of this one.
+    install: { codex: copy }   # nested in an upstream plugin: a link would rename it in Codex
   - name: plan
     source: { local: skills/plan }
   - name: ponytail-audit
@@ -49,6 +66,9 @@ skills:
   - name: ponytail-review
     source: { submodule: upstream/ponytail, path: skills/ponytail-review }
     install: { codex: copy }   # nested in an upstream plugin: a link would rename it in Codex
+  - name: prompt-engineering-expert
+    source: { submodule: upstream/prompt-engineering-expert, path: . }
+    # The upstream repository declares no license; it is referenced as a submodule, not copied.
   - name: qmd
     source: { local: skills/qmd }
     # The Codex copy in ~/.codex/skills carries Codex-specific wording and is left unmanaged until skills can have per-platform variants.
@@ -59,5 +79,8 @@ skills:
     source: { local: skills/synthesize }
   - name: treemd
     source: { local: skills/treemd }
+  - name: use-modern-go
+    source: { submodule: upstream/go-modern-guidelines, path: plugin/skills/use-modern-go }
+    install: { codex: copy }   # nested in an upstream plugin: a link would rename it in Codex
   - name: yumi-persona
     source: { local: skills/yumi-persona }

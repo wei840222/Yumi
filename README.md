@@ -115,31 +115,40 @@
 
 ## 🧰 技能庫清單 (Skills)
 
-本環境收錄 **22 個技能**，由 `skills.yaml` 管理。其中 7 個來自上游 submodule（`upstream/`），14 個放在 `skills/`，1 個由 Hindsight 安裝程式負責：
+本環境收錄 **31 個技能**，由 `skills.yaml` 管理。其中 16 個來自上游 submodule（`upstream/`），14 個放在 `skills/`，1 個由 Hindsight 安裝程式負責：
 
 | 技能名稱 | 來源 | 技能簡述 |
 | :------- | :--- | :------- |
 | **analyze** | OpenClaw 技能庫（複製） | 以結構化框架分析資料、程式碼、決策，協助排序優先順序與質疑假設。 |
 | **anydoc** | [`@wei840222/anydoc`](https://clawhub.ai/wei840222/skills/anydoc) | 各類文件格式 (Word, PPT, Excel, PDF, EPUB, RTF) 轉 GitHub Markdown 工具。 |
+| **architecture-diagram** | [Cocoon-AI/architecture-diagram-generator](https://github.com/Cocoon-AI/architecture-diagram-generator)（submodule） | 產生深色主題、可獨立開啟的 HTML＋SVG 系統架構圖（基礎設施、雲端、資安、網路拓撲）。 |
+| **book-to-skill** | [virgiliojr94/book-to-skill](https://github.com/virgiliojr94/book-to-skill)（submodule） | 把書籍與文件（PDF、EPUB、DOCX 等）轉成結構化的 agent skill，萃取框架、心智模型、原則與反模式。 |
+| **buddhist-method** | [nai0om/buddhist-method](https://github.com/nai0om/buddhist-method)（submodule） | 把佛教的認識論與決策原則當作工作紀律，改善推理品質、抑制幻覺、在壓力下穩定除錯。 |
 | **clawhub** | OpenClaw 內建 | 搜尋 ClawHub 的外掛與技能；偏管理用途，`librarian` 只准 `search`／`inspect`。 |
 | **codegraph** | 本機安裝 | 以預先建好的本機程式碼圖譜回答程式碼問題：符號來源、呼叫路徑、變更影響與受影響測試。 |
 | **compare** | OpenClaw 技能庫（複製） | 加權準則、研究對等檢查與信心水準的多選項比較。 |
 | **cx** | [`@wei840222/cx-cli`](https://clawhub.ai/wei840222/skills/cx-cli) | 語意化程式碼導航工具 (`cx` CLI)，在閱讀大檔前快速探索符號定義、呼叫鏈與參照。 |
+| **darwin-skill** | [alchaincyf/darwin-skill](https://github.com/alchaincyf/darwin-skill)（submodule） | 自動優化其他 skill 的工具（九維度評分、驗證閘門、人工檢查點）；**會修改 `SKILL.md`**，而你的 skills 目錄是連到本 repo 的 symlink。 |
 | **defuddle** | [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills)（submodule） | 使用 Defuddle CLI 從網頁中擷取乾淨的 Markdown 內文，去除導航欄與干擾元素。 |
 | **diverge** | OpenClaw 技能庫（複製） | 先從多個觀點評估複雜問題，再整合為有理由的結論。 |
+| **freud-skill** | [alchaincyf/freud-skill](https://github.com/alchaincyf/freud-skill)（submodule） | 為 AI 做認知調優：處理複雜任務前的「認知準備」，以及用精神分析手法診斷 prompt／skill 的衝突與隱含規則。 |
 | **gitea** | [`@wei840222/gitea`](https://clawhub.ai/wei840222/skills/gitea) | Gitea `tea` CLI 操作技能，用於管理 Issue、PR、Release 與儲存庫（提示規定一律明確帶 `--login`，值來自 `local.yaml`）。 |
 | **handoff** | [mattpocock/skills](https://github.com/mattpocock/skills)（submodule） | 把目前對話濃縮成交接文件，讓另一個代理接手。 |
 | **hindsight-coding-agent** | Hindsight 安裝程式寫入（external，不由本 repo 安裝） | 說明這台機器的 Hindsight 記憶如何運作與設定。 |
+| **huashu-design** | [alchaincyf/huashu-design](https://github.com/alchaincyf/huashu-design)（submodule） | 用 HTML 做高保真原型、投影片、動畫與設計評審（先出三個方向再執行）。體積大（約 41 MB）；雲端 TTS 需自備金鑰，見上游 `SECURITY.md`。 |
 | **i-have-adhd** | [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)（submodule） | 為有 ADHD 的讀者調整輸出：先給下一步、步驟編號、少岔題；以 `/i-have-adhd` 啟用。 |
 | **in-depth-research** | 改寫自 OpenClaw 的 Deep Research（v1.1.1） | 有方法論記錄、來源評估與明確停止條件的多來源深度調查。 |
 | **kubernetes-skill** | [LukasNiessen/kubernetes-skill](https://github.com/LukasNiessen/kubernetes-skill)（submodule） | 防止 Kubernetes manifest 的常見幻覺與失誤：不安全預設值、資源不足、網路暴露、權限擴張、API 漂移。 |
+| **nopua** | [wuji-labs/nopua](https://github.com/wuji-labs/nopua)（submodule） | 反 PUA：用信任與內在動機取代恐懼與威脅來驅動 AI；任務連續失敗、想放棄時啟動。 |
 | **plan** | OpenClaw 技能庫（複製） | 規劃任務：估算規模、拆解步驟與風險回復。 |
 | **ponytail-audit** | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)（submodule） | 整個 repo 的品質稽核：bug、資安、負載、缺測試的風險程式碼與可刪減處，只出報告、不改檔。 |
 | **ponytail-review** | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)（submodule） | 單一變更（diff、branch、commit、PR）的品質審查，會讀相關程式碼而不只看 diff。 |
+| **prompt-engineering-expert** | [TomsTools11/prompt-engineering-expert](https://github.com/TomsTools11/prompt-engineering-expert)（submodule） | 提示工程、自訂指令設計與 prompt 優化。**上游未宣告授權**，僅以 submodule 引用。 |
 | **qmd** | wei840222/qmd（Gitea） | 用 QMD 搜尋本機 Markdown 知識庫、筆記與 Wiki。 |
 | **speak-human-tw** | [Raymondhou0917/speak-human-tw](https://github.com/Raymondhou0917/speak-human-tw)（submodule） | 繁體中文去 AI 味：校正中國用語與半形標點，讓文字讀起來像真人寫的。 |
 | **synthesize** | OpenClaw 技能庫（複製） | 整合多個來源為帶出處的統一見解，並明確處理衝突。 |
 | **treemd** | [`@wei840222/treemd`](https://clawhub.ai/wei840222/skills/treemd) | 基於 Rust 的 Markdown 結構分析、標題樹瀏覽與 TQL 查詢工具。 |
+| **use-modern-go** | [JetBrains/go-modern-guidelines](https://github.com/JetBrains/go-modern-guidelines)（submodule） | 撰寫或修改 Go 程式碼時，依 Go 版本套用 Modern Go Guidelines CLI 的建議（首次使用會 `go install` 一個固定版本的 CLI）。 |
 | **yumi-persona** | Yumi / 本地專用 | Yumi 專用客製化 Persona、名媛傲嬌口吻與深度角色扮演設定。 |
 
 研究與文件查詢（Context7、DeepWiki、GoogleDeveloperKnowledge、AnySearch）不是 skill，而是可選的 `bifrost` MCP server；在 `local.yaml` 設 `features.bifrost: true` 才會在提示與子代理中出現。
