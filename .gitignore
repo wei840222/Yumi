@@ -5,6 +5,8 @@
 !Makefile
 !skills.yaml
 !local.example.yaml
+!LICENSE
+!THIRD_PARTY_NOTICES.md
 
 !skills/
 !skills/**

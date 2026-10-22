@@ -109,6 +109,22 @@ doctor_reports_bad_path() {
 }
 t "doctor reports a rejected source path and keeps going" doctor_reports_bad_path
 
+# --- 4d. a README link to a file git does not track is reported (the whitelist can hide files)
+printf '# t\n[license](LICENSE) and ![x](assets/pic.png)\n' > "$m/README.md"
+printf 'MIT\n' > "$m/LICENSE"; mkdir -p "$m/assets"; printf 'x\n' > "$m/assets/pic.png"
+git -C "$m" add README.md   # LICENSE and the picture stay untracked
+readme_untracked_reported() {
+  YUMI_DIST=$tmp/dist-rb YUMI_SUBMODULE_STATUS_FILE=$tmp/sm "$m/scripts/doctor.sh" > "$tmp/doctor2.out" 2>&1 || true
+  grep -q 'FAIL  README points at files that are not tracked.*LICENSE' "$tmp/doctor2.out"
+}
+t "doctor reports a README link to an untracked file" readme_untracked_reported
+git -C "$m" add -f LICENSE assets/pic.png
+readme_tracked_ok() {
+  YUMI_DIST=$tmp/dist-rb YUMI_SUBMODULE_STATUS_FILE=$tmp/sm "$m/scripts/doctor.sh" > "$tmp/doctor3.out" 2>&1 || true
+  grep -q 'ok    README: every relative link and image points at a tracked file' "$tmp/doctor3.out"
+}
+t "doctor is satisfied once the files are tracked" readme_tracked_ok
+
 # --- 5. restore says which items it cannot undo
 printf 'skills:\n  - name: aaa\n    source: { local: skills/aaa }\n  - name: zzz\n    source: { local: skills/zzz }\n' > "$m/skills.yaml"
 rm -rf "$HOME/.claude" "$HOME/.codex" "$tmp/backups"; mkdir -p "$CLAUDE_HOME/skills/aaa"; echo "old aaa" > "$CLAUDE_HOME/skills/aaa/SKILL.md"

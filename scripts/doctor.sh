@@ -145,13 +145,29 @@ else fail "hygiene: personal values found ($(grep -c '^HIT' "$scratch/hygiene.ou
 
 # --- README and manifest agree
 if [ -f "$root/README.md" ]; then
-  readme=$(grep -oE '^\| \*\*[^*]+\*\*' "$root/README.md" | sed -E 's/^\| \*\*//; s/\*\*$//' | sort -u)
+  readme=$({ grep -oE '^\| \*\*[^*]+\*\*' "$root/README.md" || true; } | sed -E 's/^\| \*\*//; s/\*\*$//' | sort -u)
   manifest=$(skill_rows | cut -d"$YUMI_FS" -f1 | sort -u)
   if [ -z "$readme" ]; then warn "README.md has no skills table"
   elif [ "$readme" = "$manifest" ]; then ok "README skills table matches the manifest"
   else warn "README skills table and the manifest differ: $(diff <(echo "$readme") <(echo "$manifest") | grep '^[<>]' | tr '\n' ' ')"; fi
 else
   warn "README.md not found"
+fi
+
+# --- everything the README links to or embeds must be tracked (the .gitignore is a
+# whitelist, so a new file is silently ignored until it is added to it)
+if [ -f "$root/README.md" ] && git -C "$root" rev-parse --git-dir >/dev/null 2>&1; then
+  untracked=()
+  while IFS= read -r target; do
+    case $target in ''|http://*|https://*|mailto:*|\#*) continue ;; esac
+    target=${target%%#*}
+    [ -n "$target" ] || continue
+    if git -C "$root" ls-files --error-unmatch -- "$target" >/dev/null 2>&1 \
+       || [ -n "$(git -C "$root" ls-files -- "${target%/}/" 2>/dev/null | head -n 1)" ]; then continue; fi
+    untracked+=("$target")
+  done < <({ grep -oE '\]\([^)]*\)' "$root/README.md" | sed -E 's/^\]\(//; s/\)$//'; grep -oE 'src="[^"]+"' "$root/README.md" | sed -E 's/^src="//; s/"$//'; } | sort -u)
+  if [ "${#untracked[@]}" -eq 0 ]; then ok "README: every relative link and image points at a tracked file"
+  else fail "README points at files that are not tracked by git: ${untracked[*]} (the .gitignore whitelist may be hiding them)"; fi
 fi
 
 # --- settings drift (informational: the repo never writes these files)
