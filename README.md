@@ -157,6 +157,12 @@
 
 ## 🚀 快速上手與配置
 
+將下列整行貼到 Claude Code 或 Codex，讓代理帶你完成兩個平台的安裝與設定；過程中會請你確認個人值與設定檔變更：
+
+```text
+請依 https://github.com/wei840222/Yumi 的 README，幫我完成本機 Claude Code 與 Codex 的 Yumi 安裝與設定：先閱讀 README 與相關腳本，在固定目錄 clone（含 submodules）或沿用既有 checkout，檢查並補齊必要工具；需要個人值時先詢問我，僅寫入被 Git 忽略的 local.yaml，否則使用公開預設；執行 build 與 install dry-run，確認安裝範圍後再安裝；接著用 make drift P=claude 與 P=codex 比對設定範本，保留既有設定與 hooks，不讀取或輸出憑證，只啟用本機已具備依賴的可選整合，每次修改設定檔前先取得我的同意並備份；最後執行 make doctor 與 make hygiene，回報結果、備份位置及仍需我完成的步驟。
+```
+
 ### 1. 取得與準備
 
 ```bash
